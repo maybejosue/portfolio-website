@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /* background-color: #151823; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* MobileNav */
+
+.img-container {
+  border: "solid 1px black";
+  width: 70px;
+  margin-left: 40%;
+  margin-top: 2%;
+}
+
+.img {
+  border: "solid 1px blue";
+  border-radius: 100px;
+}
