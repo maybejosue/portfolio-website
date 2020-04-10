@@ -10,16 +10,51 @@ html {
   font-size: 62.5%;
 }
 
-/* MobileNav */
+/* == MobileNav == */
+
+/* Closed */
+
+.mobile-nav-container {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.svg-container {
+  display: flex;
+  align-items: center;
+}
 
 .img-container {
-  border: "solid 1px black";
-  width: 70px;
-  margin-left: 40%;
-  margin-top: 2%;
+  width: 65px;
+  margin-left: 28%;
 }
 
 .img {
-  border: "solid 1px blue";
   border-radius: 100px;
+  border: solid 1px black;
+}
+
+/* Open */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(161, 43, 43);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.anchors {
+  padding: 5px 5px 5px 83px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fdfdfd;
+  display: block;
+  transition: 0.3s;
 }
