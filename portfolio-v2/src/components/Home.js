@@ -1,7 +1,7 @@
 import React from "react";
 
 //animation
-import SoftwareEnginner from "./animations/SoftwareEnginner.js";
+import SoftwareEngineer from "./animations/SoftwareEngineer.js";
 
 export default function Home(props) {
   console.log(props);
@@ -10,7 +10,7 @@ export default function Home(props) {
       <div className="home-container">
         <div className="main-header">
           <h1>Josue Rodriguez</h1>
-          <SoftwareEnginner />
+          <SoftwareEngineer />
           <h1>Portfolio</h1>
         </div>
         <div className="sub-header">
@@ -20,7 +20,9 @@ export default function Home(props) {
           </p>
         </div>
         <div className="get-started-btn">
-          <p className="btn">Get To Know Me</p>
+          <a href="#aboutme">
+            <p className="btn">Get To Know Me</p>
+          </a>
         </div>
       </div>
     </section>

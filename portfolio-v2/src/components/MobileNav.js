@@ -42,27 +42,27 @@ export default function MobileNav() {
           <img className="img-open" src={MyPic} />
         </div>
         <div>
-          <a href="#" className="anchors">
+          <a href="#home" className="anchors">
             Home
           </a>
-          <a href="#" className="anchors">
+          <a href="#aboutme" className="anchors">
             About
           </a>
-          <a href="#" className="anchors">
+          <a href="#skills" className="anchors">
             Skills
           </a>
-          <a href="#" className="anchors">
+          <a href="#projects" className="anchors">
             Projects
           </a>
-          <a href="#" className="anchors">
+          <a href="#resume" className="anchors">
             Resume
           </a>
-          <a href="#" className="anchors">
+          <a href="#social" className="anchors">
             Social
           </a>
         </div>
         <div className="mobile-contact-container">
-          <a href="#" className="mobile-contact-anchor">
+          <a href="#contact" className="mobile-contact-anchor">
             Contact
           </a>
         </div>

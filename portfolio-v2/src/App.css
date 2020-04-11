@@ -101,7 +101,6 @@ html {
 /* == Home == */
 
 .home-container {
-  border: solid 1px black;
   margin-top: 40%;
 }
 
@@ -121,9 +120,8 @@ html {
 
 .sub-header {
   margin-top: 15%;
-  border: solid 1px black;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .get-started-btn {
@@ -132,7 +130,13 @@ html {
 }
 
 .btn {
-  border: solid 1px black;
+  border: solid 1px red;
+  width: 50%;
+  padding: 10px 0 10px 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 /* == Home End == */
