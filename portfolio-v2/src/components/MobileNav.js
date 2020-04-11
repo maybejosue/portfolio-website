@@ -27,12 +27,7 @@ export default function MobileNav() {
         </svg>
       </div>
       <div id="sidebar-menu" className="sidenav">
-        <div
-          style={{
-            marginLeft: "75%",
-            marginTop: "-31px",
-          }}
-        >
+        <div className="svg-container-open">
           <svg width="30" height="30" onClick={() => close()}>
             <rect width="30" height="30" fill="none" rx="0" ry="0" />
             <path
@@ -43,20 +38,8 @@ export default function MobileNav() {
             />
           </svg>
         </div>
-        <div
-          style={{
-            width: "80px",
-            marginLeft: "30%",
-            marginBottom: "25%",
-          }}
-        >
-          <img
-            style={{
-              borderRadius: "100px",
-              border: "solid 1px black",
-            }}
-            src={MyPic}
-          />
+        <div className="img-container-open">
+          <img className="img-open" src={MyPic} />
         </div>
         <div>
           <a href="#" className="anchors">
@@ -78,22 +61,8 @@ export default function MobileNav() {
             Social
           </a>
         </div>
-        <div style={{ marginTop: "30%" }}>
-          <a
-            href="#"
-            style={{
-              marginLeft: "10%",
-              border: "solid 1px black",
-              padding: "8px 0px 8px 65px",
-              textDecoration: "none",
-              fontSize: "1.5rem",
-              color: "#fdfdfd",
-              display: "block",
-              transition: "0.3s",
-              width: "75%",
-              borderRadius: "10px",
-            }}
-          >
+        <div className="mobile-contact-container">
+          <a href="#" className="mobile-contact-anchor">
             Contact
           </a>
         </div>

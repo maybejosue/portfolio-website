@@ -35,6 +35,8 @@ html {
   border: solid 1px black;
 }
 
+/* Closed End */
+
 /* Open */
 
 .sidenav {
@@ -56,5 +58,42 @@ html {
   font-size: 2rem;
   color: #fdfdfd;
   display: block;
-  transition: 0.3s;
+  transition: 0.1s;
 }
+
+.img-container-open {
+  width: 80px;
+  margin-left: 30%;
+  margin-bottom: 25%;
+}
+
+.img-open {
+  border-radius: 100px;
+  border: solid 1px black;
+}
+
+.svg-container-open {
+  margin-left: 75%;
+  margin-top: -31px;
+}
+
+.mobile-contact-container {
+  margin-top: 30%;
+}
+
+.mobile-contact-anchor {
+  margin-left: 10%;
+  border: solid 1px black;
+  padding: 8px 0px 8px 65px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fdfdfd;
+  display: block;
+  transition: 0.3s;
+  width: 75%;
+  border-radius: 10px;
+}
+
+/* Open End */
+
+/* == MobileNav End == */
