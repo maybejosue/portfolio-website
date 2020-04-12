@@ -6,7 +6,7 @@ import SoftwareEngineer from "./animations/SoftwareEngineer.js";
 export default function Home(props) {
   console.log(props);
   return (
-    <section id="home">
+    <section>
       <div className="home-container">
         <div className="main-header">
           <h1>Josue Rodriguez</h1>

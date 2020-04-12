@@ -5,6 +5,7 @@ import "./App.css";
 import MobileNav from "./components/MobileNav.js";
 import Home from "./components/Home.js";
 import AboutMe from "./components/AboutMe.js";
+import Skill from "./components/Skill.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <MobileNav />
       <Home />
       <AboutMe />
+      <Skill />
     </div>
   );
 }
