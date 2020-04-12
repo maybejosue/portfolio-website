@@ -14,7 +14,7 @@ html {
 
 /* Closed */
 
-.mobile-nav-container {
+.closed-nav-container {
   display: flex;
   margin-top: 2%;
   margin-left: 5%;
@@ -136,7 +136,6 @@ html {
   border-radius: 10px;
   margin: 0 auto;
   font-size: 1.2rem;
-  text-decoration: none;
 }
 
 /* == Home End == */
@@ -159,3 +158,39 @@ html {
 }
 
 /* == SoftwareEngineer End == */
+
+/* == AboutMe == */
+
+.section-heading {
+  width: 75%;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 5%;
+  border-bottom: solid 1px black;
+  margin: 0 0 10% 12.5%;
+}
+
+.about-me-container {
+  margin-top: 25%;
+}
+
+.about-me-img-container {
+  margin: 5px;
+  padding: 15px;
+}
+
+.about-me-img {
+  border-radius: 10px;
+}
+
+.about-me-paragraph-container {
+  margin: 5px;
+  padding: 15px;
+  margin-bottom: 15%;
+}
+
+.about-me-paragraph-container p {
+  font-size: 1.5rem;
+}
+
+/* == AboutMe End == */

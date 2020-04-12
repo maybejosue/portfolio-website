@@ -14,13 +14,13 @@ export default function Home(props) {
           <h1>Portfolio</h1>
         </div>
         <div className="sub-header">
-          <p>
-            'When I let go of what I am,
-            <br /> I become what I might be.' - Lao Tsu
+          <p style={{ fontStyle: "italic" }}>
+            "When I let go of what I am,
+            <br /> I become what I might be." - Lao Tsu
           </p>
         </div>
         <div className="get-started-btn">
-          <a href="#aboutme">
+          <a href="#aboutme" style={{ textDecoration: "none", color: "black" }}>
             <p className="btn">Get To Know Me</p>
           </a>
         </div>
