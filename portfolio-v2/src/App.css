@@ -191,9 +191,41 @@ html {
 
 .about-me-paragraph-container p {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 /* == AboutMe End == */
 
 /* == Skill == */
+
+.graph-container {
+  height: 400px;
+  margin: 5%;
+}
+
+.slice-container {
+  margin: 5%;
+}
+
+.slice-container h6 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.slice-container p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.graph-btn {
+  margin-top: 10%;
+  border: solid 1px black;
+  width: 50%;
+  margin-left: 24%;
+  padding: 5px 0 5px 0;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
 /* == Skill End == */

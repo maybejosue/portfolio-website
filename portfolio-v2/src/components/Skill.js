@@ -22,13 +22,7 @@ export default function Skill() {
     <section id="skills">
       <div>
         <h5 className="section-heading">Skills</h5>
-        <div
-          style={{
-            height: "400px",
-            border: "solid 1px black",
-            margin: "5%",
-          }}
-        >
+        <div className="graph-container">
           <ResponsivePie
             onClick={(slice) => {
               setDataOnClick(slice);
@@ -64,10 +58,10 @@ export default function Skill() {
                 anchor: "bottom",
                 direction: "row",
                 translateY: 56,
-                itemWidth: 100,
-                itemHeight: 18,
+                itemWidth: 50,
+                itemHeight: 5,
                 itemTextColor: "#999",
-                symbolSize: 18,
+                symbolSize: 10,
                 symbolShape: "circle",
 
                 effects: [
@@ -82,16 +76,25 @@ export default function Skill() {
             ]}
           />
         </div>
-        <div>
-          {dataOnClick ? (
-            <div>
-              <p>{test[0].id}</p>
-              <button onClick={() => setDataOnClick()}>clcik</button>
-            </div>
-          ) : (
-            <p>hello</p>
-          )}
-        </div>
+
+        {dataOnClick ? (
+          <div className="slice-container">
+            <h6>{test[0].id}</h6>
+            <p>{test[0].desc}</p>
+            <p className="graph-btn" onClick={() => setDataOnClick()}>
+              Return
+            </p>
+          </div>
+        ) : (
+          <div className="slice-container">
+            <h6>Graph</h6>
+            <p>
+              Hello ahsoif s ;ajf [as ajskd f ahspofhuaw asjf lakws aoshdfp akaj
+              sdpoifa aijspoid fp iajspdfoi oaisjdpf oaisjd fpi poidjc oa sa[
+              oaisj [oj aoijsd
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );
