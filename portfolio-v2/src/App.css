@@ -3,11 +3,15 @@
   padding: 0;
   margin: 0;
   max-width: 100%;
-  /* background-color: #151823; */
+  color: white;
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  background-color: #151823;
 }
 
 /* == MobileNav == */
@@ -32,7 +36,7 @@ html {
 
 .img {
   border-radius: 100px;
-  border: solid 1px black;
+  border: solid 1px #fff;
 }
 
 /* Closed End */
@@ -46,7 +50,7 @@ html {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(161, 43, 43);
+  background-color: #1b4a79;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -59,17 +63,19 @@ html {
   color: #fdfdfd;
   display: block;
   transition: 0.1s;
+  background-color: #1b4a79;
 }
 
 .img-container-open {
   width: 80px;
   margin-left: 30%;
   margin-bottom: 25%;
+  background-color: #1b4a79;
 }
 
 .img-open {
   border-radius: 100px;
-  border: solid 1px black;
+  border: solid 1px white;
 }
 
 .svg-container-open {
@@ -79,15 +85,17 @@ html {
 
 .mobile-contact-container {
   margin-top: 30%;
+  background-color: #1b4a79;
 }
 
 .mobile-contact-anchor {
   margin-left: 10%;
-  border: solid 1px black;
+  border: solid 1px white;
   padding: 8px 0px 8px 65px;
   text-decoration: none;
   font-size: 1.5rem;
   color: #fdfdfd;
+  background-color: #3c91e8;
   display: block;
   transition: 0.3s;
   width: 75%;
@@ -157,6 +165,10 @@ html {
   padding-left: 65px;
 }
 
+.animate {
+  color: #4875de;
+}
+
 /* == SoftwareEngineer End == */
 
 /* == AboutMe == */
@@ -166,7 +178,7 @@ html {
   font-size: 2rem;
   text-align: center;
   padding-bottom: 5%;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px white;
   margin: 0 0 10% 12.5%;
 }
 
