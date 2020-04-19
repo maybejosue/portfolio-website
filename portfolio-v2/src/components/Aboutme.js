@@ -3,7 +3,7 @@ import React from "react";
 //images
 import fillerpic from "../img/filler-pic.jpg";
 
-export default function AboutMe() {
+export default function Aboutme() {
   return (
     <section id="aboutme">
       <div className="about-me-container">
