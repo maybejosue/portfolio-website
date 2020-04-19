@@ -286,3 +286,66 @@ body {
 }
 
 /* == Project Card End == */
+
+/* == Social == */
+
+.social-container {
+  margin-top: 20%;
+}
+
+.social-container h5 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15%;
+}
+
+.social-card-container {
+  display: flex;
+  background-color: #1f2436;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.social-img-container {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 65px;
+}
+
+.linkedin {
+  background-color: #0e76a8;
+}
+
+.github {
+  background-color: #333;
+}
+
+.email {
+  background-color: #b23121;
+}
+
+.social-text-content-container {
+  margin-left: 25px;
+
+  height: 90px;
+  width: 100%;
+}
+
+.social-text-content-container h6 {
+  font-size: 1.8rem;
+  margin: 10px 0 5px 0;
+}
+
+.social-text-content-container p {
+  font-size: 1.5rem;
+  /* border: solid 1px black; */
+  padding: "10%";
+}
+
+/* == Social End == */
