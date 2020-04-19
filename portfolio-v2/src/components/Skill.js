@@ -20,7 +20,7 @@ export default function Skill() {
 
   return (
     <section id="skills">
-      <div>
+      <div className="skill-section-container">
         <h5 className="section-heading">Skills</h5>
         <div className="graph-container">
           <ResponsivePie
