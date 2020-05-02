@@ -23,8 +23,8 @@ export default function MobileNav() {
           <Headroom>
             <div className="closed-nav-container">
               <div className="svg-container">
-                <svg width="30" height="30" onClick={() => open()}>
-                  <rect width="30" height="30" fill="none" rx="0" ry="0" />
+                <svg width="24" height="24" onClick={() => open()}>
+                  <rect width="24" height="24" fill="none" rx="0" ry="0" />
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -43,8 +43,8 @@ export default function MobileNav() {
 
           <div id="sidebar-menu" className="sidenav">
             <div className="svg-container-open">
-              <svg width="30" height="30" onClick={() => close()}>
-                <rect width="30" height="30" fill="none" rx="0" ry="0" />
+              <svg width="24" height="24" onClick={() => close()}>
+                <rect width="24" height="24" fill="none" rx="0" ry="0" />
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"

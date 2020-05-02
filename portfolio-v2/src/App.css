@@ -15,7 +15,6 @@ html {
 
 body {
   background-color: #151823;
-  overflow: hidden;
 }
 
 /* == MobileNav == */
@@ -34,6 +33,12 @@ body {
 .svg-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: #1f2436;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  border-radius: 8px;
 }
 
 .img-container {
@@ -90,8 +95,15 @@ body {
 }
 
 .svg-container-open {
-  margin-left: 75%;
+  margin-left: 80%;
   margin-top: -31px;
+  background: #151823;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 
 .mobile-contact-container {
@@ -303,6 +315,7 @@ body {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 10%;
+  margin-top: 8%;
 }
 
 .card-text-content-container p {
@@ -357,7 +370,6 @@ body {
 
 .social-text-content-container {
   margin-left: 25px;
-
   height: 90px;
   width: 100%;
 }
@@ -369,7 +381,6 @@ body {
 
 .social-text-content-container p {
   font-size: 1.5rem;
-  /* border: solid 1px black; */
   padding: "10%";
 }
 
