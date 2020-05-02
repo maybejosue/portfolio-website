@@ -272,12 +272,13 @@ body {
 
 .card-img-container {
   margin: 8px 4px 8px 4px;
+  display: flex;
+  justify-content: center;
 }
 
 .card-img {
   border-radius: 10px;
   width: 350px;
-  margin: 0 auto;
 }
 
 .card-text-content-container {
