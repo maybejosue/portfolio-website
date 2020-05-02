@@ -272,20 +272,16 @@ body {
 }
 
 .card-img-container {
-  /* display: flex; */
-  /* justify-content: center; */
-  border: 1px solid green;
   margin: 8px 4px 8px 4px;
 }
 
 .card-img {
   border-radius: 10px;
-  width: 250px;
+  width: 350px;
 }
 
 .card-text-content-container {
   margin: 3% 3% 3% 3%;
-  border: 1px solid grey;
 }
 
 .card-text-content-container h6 {
