@@ -277,6 +277,9 @@ body {
 .card-img {
   border-radius: 10px;
   width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-text-content-container {
