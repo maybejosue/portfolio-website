@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 
 // Image
@@ -7,13 +7,17 @@ import MyPic from "../img/professional-pic.png";
 //react headroom
 import Headroom from "react-headroom";
 
-export default function MobileNav() {
+export default function MobileNav(props) {
+  const [isOpen, setIsOpen] = useState(false);
+
   function open() {
     document.getElementById("sidebar-menu").style.width = "250px";
+    setIsOpen(true);
   }
 
   function close() {
     document.getElementById("sidebar-menu").style.width = "0";
+    setIsOpen(false);
   }
 
   return (
@@ -23,7 +27,13 @@ export default function MobileNav() {
           <Headroom>
             <div className="closed-nav-container">
               <div className="svg-container">
-                <svg width="24" height="24" onClick={() => open()}>
+                <svg
+                  width="24"
+                  height="24"
+                  onClick={() => (
+                    open(), props.setCloseNav(false), setIsOpen(true)
+                  )}
+                >
                   <rect width="24" height="24" fill="none" rx="0" ry="0" />
                   <path
                     fillRule="evenodd"
@@ -41,9 +51,17 @@ export default function MobileNav() {
             </div>
           </Headroom>
 
-          <div id="sidebar-menu" className="sidenav">
+          <div
+            id="sidebar-menu"
+            className="sidenav"
+            onClick={isOpen && props.closeNav ? close() : null}
+          >
             <div className="svg-container-open">
-              <svg width="24" height="24" onClick={() => close()}>
+              <svg
+                width="24"
+                height="24"
+                onClick={() => (close(), props.setCloseNav(true))}
+              >
                 <rect width="24" height="24" fill="none" rx="0" ry="0" />
                 <path
                   fillRule="evenodd"
