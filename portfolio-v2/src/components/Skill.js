@@ -16,7 +16,6 @@ export default function Skill() {
       return dataOnClick.id === data.id;
     });
   }
-  console.log(test);
 
   return (
     <section id="skills">
