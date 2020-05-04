@@ -117,7 +117,7 @@ body {
   padding: 3% 0px 3% 0%;
   font-size: 1.5rem;
   color: #fdfdfd;
-  background-color: #128be4;
+  background-color: #0ec3f0;
   display: block;
   transition: 0.3s;
   width: 75%;
@@ -125,14 +125,14 @@ body {
   text-align: center;
 }
 
+.mobile-contact-container:hover {
+  background: #03ca93;
+  border: solid 2px #4875de;
+}
+
 .mobile-contact-anchor {
   text-decoration: none;
   color: #f8f6f5;
-}
-
-.mobile-contact-anchor:hover {
-  background: #151823;
-  border: solid 2px #4875de;
 }
 
 /* Open End */
@@ -298,7 +298,8 @@ body {
 
 .card-container {
   margin: 10% 5% 10% 5%;
-  border: solid 1px #f8f6f5;
+  border: solid 1px #1f2436;
+  background: #1f2436;
   border-radius: 10px;
 }
 
