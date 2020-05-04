@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   max-width: 100%;
-  color: #f8f6f5;
 }
 
 html {
@@ -27,10 +26,10 @@ body {
 .closed-nav-container {
   display: flex;
   margin-top: 2%;
-  margin-left: 5%;
 }
 
 .svg-container {
+  margin-left: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +42,10 @@ body {
 
 .img-container {
   width: 65px;
-  margin-left: 28%;
+  margin-left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img {
@@ -73,10 +75,10 @@ body {
 }
 
 .anchors {
-  padding: 5px 5px 5px 83px;
+  padding: 3% 3% 3% 30%;
   text-decoration: none;
   font-size: 2rem;
-  color: #fdfdfd;
+  color: #f8f6f5;
   display: block;
   transition: 0.1s;
   background-color: #1b4a79;
@@ -96,6 +98,7 @@ body {
 
 .svg-container-open {
   margin-left: 80%;
+  margin-right: 5%;
   margin-top: -31px;
   background: #151823;
   width: 35px;
@@ -109,13 +112,9 @@ body {
 .mobile-contact-container {
   margin-top: 30%;
   background-color: #1b4a79;
-}
-
-.mobile-contact-anchor {
   margin-left: 10%;
   border: solid 2px #151823;
-  padding: 8px 0px 8px 65px;
-  text-decoration: none;
+  padding: 3% 0px 3% 0%;
   font-size: 1.5rem;
   color: #fdfdfd;
   background-color: #128be4;
@@ -123,6 +122,12 @@ body {
   transition: 0.3s;
   width: 75%;
   border-radius: 10px;
+  text-align: center;
+}
+
+.mobile-contact-anchor {
+  text-decoration: none;
+  color: #f8f6f5;
 }
 
 .mobile-contact-anchor:hover {
@@ -147,6 +152,7 @@ body {
 .main-header h1 {
   font-size: 4rem;
   padding: 10px 0px 10px 0px;
+  color: #f8f6f5;
 }
 
 .main-header h3 {
@@ -158,6 +164,7 @@ body {
   margin-top: 15%;
   text-align: center;
   font-size: 1.1rem;
+  color: #f8f6f5;
 }
 
 .get-started-btn {
@@ -172,6 +179,7 @@ body {
   border-radius: 10px;
   margin: 0 auto;
   font-size: 1.2rem;
+  color: #f8f6f5;
 }
 
 /* == Home End == */
@@ -186,11 +194,17 @@ body {
 .engineer-text {
   display: flex;
   padding-left: 8px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.test {
+  display: flex;
 }
 
 .software-engineer-animation-container {
   display: flex;
-  padding-left: 65px;
+  justify-content: center;
 }
 
 .animate {
@@ -208,6 +222,7 @@ body {
   padding-bottom: 5%;
   border-bottom: solid 1px white;
   margin: 0 0 10% 12.5%;
+  color: #f8f6f5;
 }
 
 .about-me-container {
@@ -232,6 +247,7 @@ body {
 .about-me-paragraph-container p {
   font-size: 1.5rem;
   text-align: center;
+  color: #f8f6f5;
 }
 
 /* == AboutMe End == */
@@ -255,11 +271,13 @@ body {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 10%;
+  color: #f8f6f5;
 }
 
 .slice-container p {
   font-size: 1.5rem;
   text-align: center;
+  color: #f8f6f5;
 }
 
 .graph-btn {
@@ -316,11 +334,13 @@ body {
   text-align: center;
   margin-bottom: 10%;
   margin-top: 8%;
+  color: #f8f6f5;
 }
 
 .card-text-content-container p {
   font-size: 1.5rem;
   margin-bottom: 15%;
+  color: #f8f6f5;
 }
 
 /* == Project Card End == */
@@ -335,6 +355,7 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 15%;
+  color: #f8f6f5;
 }
 
 .social-card-container {
@@ -377,11 +398,13 @@ body {
 .social-text-content-container h6 {
   font-size: 1.8rem;
   margin: 10px 0 5px 0;
+  color: #f8f6f5;
 }
 
 .social-text-content-container p {
   font-size: 1.5rem;
   padding: "10%";
+  color: #f8f6f5;
 }
 
 /* == Social End == */

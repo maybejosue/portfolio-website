@@ -11,7 +11,7 @@ export default function MobileNav(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   function open() {
-    document.getElementById("sidebar-menu").style.width = "250px";
+    document.getElementById("sidebar-menu").style.width = "60%";
     setIsOpen(true);
   }
 
