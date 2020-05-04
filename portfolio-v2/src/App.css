@@ -188,11 +188,17 @@ body {
 .engineer-text {
   display: flex;
   padding-left: 8px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.test {
+  display: flex;
 }
 
 .software-engineer-animation-container {
   display: flex;
-  padding-left: 65px;
+  justify-content: center;
 }
 
 .animate {
