@@ -20,6 +20,11 @@ export default function MobileNav(props) {
     setIsOpen(false);
   }
 
+  function home() {
+    window.scrollTo(0, 0);
+    close();
+  }
+
   return (
     <section id="home">
       <nav>
@@ -43,10 +48,10 @@ export default function MobileNav(props) {
                   />
                 </svg>
               </div>
-              <div className="img-container">
-                <a href="#home" onClick={() => close()}>
-                  <img className="img" src={MyPic} />
-                </a>
+              <div className="img-container" onClick={home}>
+                {/* <a href={test}> */}
+                <img className="img" src={MyPic} />
+                {/* </a> */}
               </div>
             </div>
           </Headroom>
@@ -72,27 +77,27 @@ export default function MobileNav(props) {
               </svg>
             </div>
             <div className="img-container-open">
-              <a href="#home" onClick={() => close()}>
+              <a onClick={home}>
                 <img className="img-open" src={MyPic} />
               </a>
             </div>
             <div>
-              <a href="#home" className="anchors" onClick={() => close()}>
+              <a className="anchors" onClick={home}>
                 Home
               </a>
-              <a href="#aboutme" className="anchors" onClick={() => close()}>
+              <a href="#aboutme" className="anchors" onClick={close}>
                 About
               </a>
-              <a href="#skills" className="anchors" onClick={() => close()}>
+              <a href="#skills" className="anchors" onClick={close}>
                 Skills
               </a>
-              <a href="#projects" className="anchors" onClick={() => close()}>
+              <a href="#projects" className="anchors" onClick={close}>
                 Projects
               </a>
-              <a href="#resume" className="anchors" onClick={() => close()}>
+              <a href="#resume" className="anchors" onClick={close}>
                 Resume
               </a>
-              <a href="#social" className="anchors" onClick={() => close()}>
+              <a href="#social" className="anchors" onClick={close}>
                 Social
               </a>
             </div>
