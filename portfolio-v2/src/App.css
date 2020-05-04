@@ -73,7 +73,7 @@ body {
 }
 
 .anchors {
-  padding: 5px 5px 5px 83px;
+  padding: 3% 3% 3% 30%;
   text-decoration: none;
   font-size: 2rem;
   color: #fdfdfd;
@@ -96,6 +96,7 @@ body {
 
 .svg-container-open {
   margin-left: 80%;
+  margin-right: 5%;
   margin-top: -31px;
   background: #151823;
   width: 35px;
@@ -109,13 +110,9 @@ body {
 .mobile-contact-container {
   margin-top: 30%;
   background-color: #1b4a79;
-}
-
-.mobile-contact-anchor {
   margin-left: 10%;
   border: solid 2px #151823;
-  padding: 8px 0px 8px 65px;
-  text-decoration: none;
+  padding: 3% 0px 3% 0%;
   font-size: 1.5rem;
   color: #fdfdfd;
   background-color: #128be4;
@@ -123,6 +120,11 @@ body {
   transition: 0.3s;
   width: 75%;
   border-radius: 10px;
+  text-align: center;
+}
+
+.mobile-contact-anchor {
+  text-decoration: none;
 }
 
 .mobile-contact-anchor:hover {
