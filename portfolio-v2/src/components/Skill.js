@@ -18,7 +18,6 @@ export default function Skill() {
       return dataOnClick.id === data.id;
     });
   }
-  console.log(test);
 
   return (
     <section id="skills">
@@ -41,7 +40,7 @@ export default function Skill() {
             enableRadialLabels={false}
             radialLabelsSkipAngle={7}
             radialLabelsTextXOffset={6}
-            radialLabelsTextColor="#333333"
+            radialLabelsTextColor="black"
             radialLabelsLinkOffset={-4}
             radialLabelsLinkDiagonalLength={22}
             radialLabelsLinkHorizontalLength={26}
@@ -51,7 +50,7 @@ export default function Skill() {
               return e.id + " (" + e.value + "%)";
             }}
             slicesLabelsSkipAngle={10}
-            slicesLabelsTextColor="#333333"
+            slicesLabelsTextColor="black"
             animate={true}
             motionStiffness={90}
             motionDamping={15}
@@ -62,7 +61,7 @@ export default function Skill() {
                 translateY: 56,
                 itemWidth: 50,
                 itemHeight: 5,
-                itemTextColor: "#999",
+                itemTextColor: "red",
                 symbolSize: 10,
                 symbolShape: "circle",
 

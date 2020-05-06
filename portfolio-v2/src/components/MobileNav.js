@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 
 // Image
@@ -7,13 +7,22 @@ import MyPic from "../img/professional-pic.png";
 //react headroom
 import Headroom from "react-headroom";
 
-export default function MobileNav() {
+export default function MobileNav(props) {
+  const [isOpen, setIsOpen] = useState(false);
+
   function open() {
-    document.getElementById("sidebar-menu").style.width = "250px";
+    document.getElementById("sidebar-menu").style.width = "60%";
+    setIsOpen(true);
   }
 
   function close() {
     document.getElementById("sidebar-menu").style.width = "0";
+    setIsOpen(false);
+  }
+
+  function home() {
+    window.scrollTo(0, 0);
+    close();
   }
 
   return (
@@ -23,8 +32,14 @@ export default function MobileNav() {
           <Headroom>
             <div className="closed-nav-container">
               <div className="svg-container">
-                <svg width="30" height="30" onClick={() => open()}>
-                  <rect width="30" height="30" fill="none" rx="0" ry="0" />
+                <svg
+                  width="24"
+                  height="24"
+                  onClick={() => (
+                    open(), props.setCloseNav(false), setIsOpen(true)
+                  )}
+                >
+                  <rect width="24" height="24" fill="none" rx="0" ry="0" />
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -33,18 +48,26 @@ export default function MobileNav() {
                   />
                 </svg>
               </div>
-              <div className="img-container">
-                <a href="#home" onClick={() => close()}>
-                  <img className="img" src={MyPic} />
-                </a>
+              <div className="img-container" onClick={home}>
+                {/* <a href={test}> */}
+                <img className="img" src={MyPic} />
+                {/* </a> */}
               </div>
             </div>
           </Headroom>
 
-          <div id="sidebar-menu" className="sidenav">
+          <div
+            id="sidebar-menu"
+            className="sidenav"
+            onClick={isOpen && props.closeNav ? close() : null}
+          >
             <div className="svg-container-open">
-              <svg width="30" height="30" onClick={() => close()}>
-                <rect width="30" height="30" fill="none" rx="0" ry="0" />
+              <svg
+                width="24"
+                height="24"
+                onClick={() => (close(), props.setCloseNav(true))}
+              >
+                <rect width="24" height="24" fill="none" rx="0" ry="0" />
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -54,27 +77,27 @@ export default function MobileNav() {
               </svg>
             </div>
             <div className="img-container-open">
-              <a href="#home" onClick={() => close()}>
+              <a onClick={home}>
                 <img className="img-open" src={MyPic} />
               </a>
             </div>
             <div>
-              <a href="#home" className="anchors" onClick={() => close()}>
+              <a className="anchors" onClick={home}>
                 Home
               </a>
-              <a href="#aboutme" className="anchors" onClick={() => close()}>
+              <a href="#aboutme" className="anchors" onClick={close}>
                 About
               </a>
-              <a href="#skills" className="anchors" onClick={() => close()}>
+              <a href="#skills" className="anchors" onClick={close}>
                 Skills
               </a>
-              <a href="#projects" className="anchors" onClick={() => close()}>
+              <a href="#projects" className="anchors" onClick={close}>
                 Projects
               </a>
-              <a href="#resume" className="anchors" onClick={() => close()}>
+              <a href="#resume" className="anchors" onClick={close}>
                 Resume
               </a>
-              <a href="#social" className="anchors" onClick={() => close()}>
+              <a href="#social" className="anchors" onClick={close}>
                 Social
               </a>
             </div>

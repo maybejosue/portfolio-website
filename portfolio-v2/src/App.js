@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 // components
@@ -10,14 +10,17 @@ import ProjectList from "./components/ProjectList.js";
 import Social from "./components/Social.js";
 
 function App() {
+  const [closeNav, setCloseNav] = useState(true);
   return (
     <div className="App">
-      <MobileNav />
-      <Home />
-      <Aboutme />
-      <Skill />
-      <ProjectList />
-      <Social />
+      <MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />
+      <div onClick={() => setCloseNav(true)}>
+        <Home />
+        <Aboutme />
+        <Skill />
+        <ProjectList />
+        <Social />
+      </div>
     </div>
   );
 }
