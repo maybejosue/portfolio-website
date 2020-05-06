@@ -235,6 +235,8 @@ body {
 
 .slice-container {
   margin: 5%;
+  transition: 9s;
+  transition-timing-function: ease-in;
 }
 
 .slice-container h6 {
