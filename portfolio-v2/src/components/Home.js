@@ -13,7 +13,13 @@ export default function Home(props) {
           <h1>Portfolio</h1>
         </div>
         <div className="sub-header">
-          <p style={{ fontStyle: "italic" }}>
+          <p
+            style={{
+              fontStyle: "italic",
+              lineHeight: "25px",
+              fontSize: "1.2rem",
+            }}
+          >
             "When I let go of what I am,
             <br /> I become what I might be." - Lao Tsu
           </p>
