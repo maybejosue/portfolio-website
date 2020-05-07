@@ -50,7 +50,7 @@ body {
 
 .img {
   border-radius: 100px;
-  border: solid 2px #fff;
+  border: solid 2px #f8f6f5;
 }
 
 /* Closed End */
@@ -126,7 +126,7 @@ body {
 }
 
 .mobile-contact-container:hover {
-  background: #03ca93;
+  background: #0cce99;
   border: solid 2px #4875de;
 }
 
@@ -322,15 +322,16 @@ body {
 
 .card-btn-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .card-btn {
-  border: solid 1px white;
-  width: 75px;
+  width: 70px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   padding: 5px 6px 5px 6px;
+  background: #0cce99;
 }
 
 .card-text-content-container h6 {
