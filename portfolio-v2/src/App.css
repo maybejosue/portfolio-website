@@ -168,19 +168,18 @@ body {
 }
 
 .get-started-btn {
-  margin-top: 22%;
+  margin-top: 18%;
   text-align: center;
 }
 
 .btn {
   background-color: #ec9900;
   background-image: linear-gradient(147deg, #ec9900 0%, #ff2525 74%);
-
   width: 50%;
-  padding: 10px 0 10px 0;
+  padding: 13px 3px 13px 3px;
   border-radius: 10px;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #f8f6f5;
 }
 
@@ -267,6 +266,8 @@ body {
 
 .slice-container {
   margin: 5%;
+  transition: 9s;
+  transition-timing-function: ease-in;
 }
 
 .slice-container h6 {

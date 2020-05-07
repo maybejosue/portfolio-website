@@ -6,6 +6,8 @@ import { ResponsivePie } from "@nivo/pie";
 //data
 import { graphData, skillInfo } from "../data/graphdata.js";
 
+import { Animated } from "react-animated-css";
+
 export default function Skill() {
   const [dataOnClick, setDataOnClick] = useState();
 
