@@ -11,6 +11,7 @@ import Social from "./components/Social.js";
 
 function App() {
   const [closeNav, setCloseNav] = useState(true);
+
   return (
     <div className="App">
       <MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />
