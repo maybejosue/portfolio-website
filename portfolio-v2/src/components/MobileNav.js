@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import { Link } from "react-scroll";
 
 // Image
 import MyPic from "../img/professional-pic.png";
@@ -85,9 +86,9 @@ export default function MobileNav(props) {
               <a className="anchors" onClick={home}>
                 Home
               </a>
-              <a href="#aboutme" className="anchors" onClick={close}>
+              <Link smooth to="aboutme" className="anchors" onClick={close}>
                 About
-              </a>
+              </Link>
               <a href="#skills" className="anchors" onClick={close}>
                 Skills
               </a>
