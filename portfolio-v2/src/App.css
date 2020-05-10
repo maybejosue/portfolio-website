@@ -302,6 +302,13 @@ body {
   border-radius: 10px;
 }
 
+.card-container h6 {
+  font-size: 1.9rem;
+  margin-left: 5%;
+  padding: 4% 0 2% 0;
+  color: #f8f6f5;
+}
+
 .card-img-container {
   margin: 10px 8px 10px 8px;
 }
@@ -315,7 +322,7 @@ body {
 }
 
 .card-text-content-container {
-  margin: 3% 3% 3% 3%;
+  padding: 3% 3% 5% 3%;
 }
 
 .card-btn-container {
@@ -330,20 +337,6 @@ body {
   justify-content: center;
   padding: 5px 6px 5px 6px;
   background: #0cce99;
-}
-
-.card-text-content-container h6 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 10%;
-  margin-top: 8%;
-  color: #f8f6f5;
-}
-
-.card-text-content-container p {
-  font-size: 1.5rem;
-  margin-bottom: 15%;
-  color: #f8f6f5;
 }
 
 /* == Project Card End == */
