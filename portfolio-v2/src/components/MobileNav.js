@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 
 // Image
@@ -19,6 +20,13 @@ export default function MobileNav(props) {
   function close() {
     document.getElementById("sidebar-menu").style.width = "0";
     setIsOpen(false);
+  }
+
+  const scroll = Scroll.animateScroll;
+
+  function goTop() {
+    scroll.scrollToTop();
+    close();
   }
 
   return (
@@ -45,7 +53,7 @@ export default function MobileNav(props) {
                 </svg>
               </div>
               <div className="img-container">
-                <Link smooth duration={850} to="home">
+                <Link smooth duration={850} onClick={goTop}>
                   <img className="img" src={MyPic} />
                 </Link>
               </div>
@@ -73,18 +81,12 @@ export default function MobileNav(props) {
               </svg>
             </div>
             <div className="img-container-open">
-              <Link smooth duration={850} to="home" onClick={close}>
+              <Link smooth duration={850} onClick={goTop}>
                 <img className="img-open" src={MyPic} />
               </Link>
             </div>
             <div>
-              <Link
-                smooth
-                duration={850}
-                className="anchors"
-                to="home"
-                onClick={close}
-              >
+              <Link smooth duration={850} className="anchors" onClick={goTop}>
                 Home
               </Link>
               <Link
