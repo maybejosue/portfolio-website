@@ -1,15 +1,15 @@
 import React from "react";
 
 export const ProjectCard = ({ project }) => {
-  const { name, desc, img } = project;
+  const { name, img } = project;
   return (
     <div className="card-container">
+      <h6>{name}</h6>
       <div className="card-img-container">
         <img src={img} className="card-img" />
       </div>
+
       <div className="card-text-content-container">
-        <h6>{name}</h6>
-        <p>{desc}</p>
         <div className="card-btn-container">
           <div className="card-btn">
             <svg

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 //animation
 import SoftwareEngineer from "./animations/SoftwareEngineer.js";
@@ -25,9 +26,14 @@ export default function Home(props) {
           </p>
         </div>
         <div className="get-started-btn">
-          <a href="#aboutme" style={{ textDecoration: "none", color: "black" }}>
+          <Link
+            smooth
+            duration={850}
+            to="aboutme"
+            style={{ textDecoration: "none", color: "black" }}
+          >
             <p className="btn">Get To Know Me</p>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
