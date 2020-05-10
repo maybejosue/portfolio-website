@@ -9,7 +9,7 @@ import { projectData } from "../data/projectdata.js";
 export default function ProjectList() {
   return (
     <section id="projects">
-      <div>
+      <div className="project-container">
         <h5 className="section-heading">Projects</h5>
         <div>
           {projectData.map((project) => (
