@@ -21,11 +21,6 @@ export default function MobileNav(props) {
     setIsOpen(false);
   }
 
-  function home() {
-    window.scrollTo(0, 0);
-    close();
-  }
-
   return (
     <section id="home">
       <nav>
@@ -50,7 +45,7 @@ export default function MobileNav(props) {
                 </svg>
               </div>
               <div className="img-container">
-                <Link smooth to="home">
+                <Link smooth duration={850} to="home">
                   <img className="img" src={MyPic} />
                 </Link>
               </div>
@@ -78,27 +73,63 @@ export default function MobileNav(props) {
               </svg>
             </div>
             <div className="img-container-open">
-              <Link smooth to="home" onClick={close}>
+              <Link smooth duration={850} to="home" onClick={close}>
                 <img className="img-open" src={MyPic} />
               </Link>
             </div>
             <div>
-              <Link smooth className="anchors" to="home" onClick={close}>
+              <Link
+                smooth
+                duration={850}
+                className="anchors"
+                to="home"
+                onClick={close}
+              >
                 Home
               </Link>
-              <Link smooth to="aboutme" className="anchors" onClick={close}>
+              <Link
+                smooth
+                duration={850}
+                to="aboutme"
+                className="anchors"
+                onClick={close}
+              >
                 About
               </Link>
-              <Link smooth to="skills" className="anchors" onClick={close}>
+              <Link
+                smooth
+                duration={850}
+                to="skills"
+                className="anchors"
+                onClick={close}
+              >
                 Skills
               </Link>
-              <Link smooth to="projects" className="anchors" onClick={close}>
+              <Link
+                smooth
+                duration={850}
+                to="projects"
+                className="anchors"
+                onClick={close}
+              >
                 Projects
               </Link>
-              <Link smooth to="resume" className="anchors" onClick={close}>
+              <Link
+                smooth
+                duration={850}
+                to="resume"
+                className="anchors"
+                onClick={close}
+              >
                 Resume
               </Link>
-              <Link smooth to="social" className="anchors" onClick={close}>
+              <Link
+                smooth
+                duration={850}
+                to="social"
+                className="anchors"
+                onClick={close}
+              >
                 Social
               </Link>
             </div>
