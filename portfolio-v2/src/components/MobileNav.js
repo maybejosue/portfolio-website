@@ -89,18 +89,18 @@ export default function MobileNav(props) {
               <Link smooth to="aboutme" className="anchors" onClick={close}>
                 About
               </Link>
-              <a href="#skills" className="anchors" onClick={close}>
+              <Link smooth to="skills" className="anchors" onClick={close}>
                 Skills
-              </a>
-              <a href="#projects" className="anchors" onClick={close}>
+              </Link>
+              <Link smooth to="projects" className="anchors" onClick={close}>
                 Projects
-              </a>
-              <a href="#resume" className="anchors" onClick={close}>
+              </Link>
+              <Link smooth to="resume" className="anchors" onClick={close}>
                 Resume
-              </a>
-              <a href="#social" className="anchors" onClick={close}>
+              </Link>
+              <Link smooth to="social" className="anchors" onClick={close}>
                 Social
-              </a>
+              </Link>
             </div>
             <div className="mobile-contact-container">
               <a href="#contact" className="mobile-contact-anchor">
