@@ -303,14 +303,14 @@ body {
 }
 
 .card-container h6 {
-  font-size: 1.9rem;
-  margin-left: 5%;
-  padding: 4% 0 2% 0;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
   color: #f8f6f5;
 }
 
 .card-img-container {
-  margin: 10px 8px 10px 8px;
+  padding: 5% 4% 5% 4%;
 }
 
 .card-img {
@@ -322,12 +322,13 @@ body {
 }
 
 .card-text-content-container {
-  padding: 3% 3% 5% 3%;
+  padding: 0% 3% 0% 3%;
 }
 
 .card-btn-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 2% 0% 5% 0%;
 }
 
 .card-btn {
