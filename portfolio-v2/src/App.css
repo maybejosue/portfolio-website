@@ -140,7 +140,7 @@ body {
 /* == Home == */
 
 .home-container {
-  padding: 40% 0 60% 0;
+  padding: 40% 0 30% 0;
 }
 
 .main-header {
@@ -218,14 +218,13 @@ body {
   width: 75%;
   font-size: 2rem;
   text-align: center;
-  padding-bottom: 5%;
-  border-bottom: solid 1px white;
   margin: 0 0 10% 12.5%;
   color: #f8f6f5;
 }
 
 .about-me-container {
-  margin-top: 25%;
+  margin-top: 20%;
+  padding-top: 15%;
 }
 
 .about-me-img-container {
@@ -254,7 +253,8 @@ body {
 /* == Skill == */
 
 .skill-section-container {
-  margin-bottom: 25%;
+  margin-top: 20%;
+  padding-top: 15%;
 }
 
 .graph-container {
@@ -292,6 +292,15 @@ body {
 }
 
 /* == Skill End == */
+
+/* == Project List  == */
+
+.project-container {
+  margin-top: 20%;
+  padding-top: 15%;
+}
+
+/* == Project List End  == */
 
 /* == Project Card  == */
 
