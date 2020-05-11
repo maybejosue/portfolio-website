@@ -8,8 +8,6 @@ export const projectData = [
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
     liveSite: "https://google.com",
     githubRepoToLive: "https://github.com",
-    oldSite: "",
-    githubRepoToOld: "",
     inDepthDesc:
       "afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwuehf  apwiueh f",
     myTask: "font end",
@@ -23,8 +21,6 @@ export const projectData = [
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
     liveSite: "https://hulu.com",
     githubRepoToLive: "https://youtube.com",
-    oldSite: "",
-    githubRepoToOld: "",
     inDepthDesc:
       "afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwuehf  apwiueh f",
     myTask: "font end",
@@ -38,8 +34,6 @@ export const projectData = [
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
     liveSite: "",
     githubRepoToLive: "",
-    oldSite: "",
-    githubRepoToOld: "",
     inDepthDesc:
       "afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwuehf  apwiueh f",
     myTask: "font end",
@@ -53,8 +47,6 @@ export const projectData = [
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
     liveSite: "",
     githubRepoToLive: "",
-    oldSite: "",
-    githubRepoToOld: "",
     inDepthDesc:
       "afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwuehf  apwiueh f",
     myTask: "font end",
