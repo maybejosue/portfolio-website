@@ -12,6 +12,8 @@ import Headroom from "react-headroom";
 export default function MobileNav(props) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scroll = Scroll.animateScroll;
+
   function open() {
     document.getElementById("sidebar-menu").style.width = "60%";
     setIsOpen(true);
@@ -21,8 +23,6 @@ export default function MobileNav(props) {
     document.getElementById("sidebar-menu").style.width = "0";
     setIsOpen(false);
   }
-
-  const scroll = Scroll.animateScroll;
 
   function goTop() {
     scroll.scrollToTop();
