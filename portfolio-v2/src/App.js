@@ -30,7 +30,7 @@ function App() {
             </div>
           </div>
         </Route>
-        <Route path="/:id/cl">
+        <Route path="/closerlook/:name">
           <div>
             <CloserLook />
           </div>

@@ -13,7 +13,7 @@ export const ProjectCard = ({ project }) => {
       <div className="card-text-content-container">
         <div className="card-btn-container">
           <h6>{name}</h6>
-          <Link to={`/${id}/cl`}>
+          <Link to={`/closerlook/${name}`}>
             <div className="card-btn">
               <svg
                 width="32"
