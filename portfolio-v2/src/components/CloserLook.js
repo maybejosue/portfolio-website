@@ -10,7 +10,12 @@ export default function CloserLook(props) {
     let filtering = projectData.filter(
       (projects) => parseInt(id) === projects.id
     );
-    history.push({ state: filtering[0] });
+
+    if (filtering[0]) {
+      history.push({ state: filtering[0] });
+    } else {
+      return <Redirect to="/" />;
+    }
   }
 
   return (
