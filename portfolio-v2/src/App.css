@@ -414,3 +414,13 @@ body {
 }
 
 /* == Social End == */
+
+/* == CloserLook == */
+.go-back {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  color: grey;
+  font-size: 1.3rem;
+}
+/* == CloserLook End == */
