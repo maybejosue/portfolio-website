@@ -30,11 +30,7 @@ function App() {
             </div>
           </div>
         </Route>
-        <Route path="/:id/cl">
-          <div>
-            <CloserLook />
-          </div>
-        </Route>
+        <Route path="/:id" component={CloserLook}></Route>
       </Switch>
     </div>
   );
