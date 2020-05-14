@@ -2,52 +2,52 @@ export const projectData = [
   {
     id: 1,
     img:
-      "https://i.postimg.cc/N0MRm1Qv/Screen-Shot-2020-03-31-at-8-09-46-PM.png",
+      "https://i.postimg.cc/nzfTpHff/Screen-Shot-2020-05-14-at-4-38-33-PM.png",
     name: "Our Community Calendar",
-    desc:
-      "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
+    appDesc:
+      "Residents experience increasing isolation and are frequently unaware of neighborhood and community gatherings in their local area. Municipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distribution lists.",
     liveSite: "https://google.com",
     githubRepoToLive: "https://github.com",
-    inDepthDesc:
+    myExperience:
       "afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwuehf  apwiueh f",
     myTask: "font end",
   },
   {
     id: 2,
     img:
-      "https://i.postimg.cc/N0MRm1Qv/Screen-Shot-2020-03-31-at-8-09-46-PM.png",
-    name: "my project 800",
-    desc:
+      "https://i.postimg.cc/4yB16V7X/Screen-Shot-2020-05-14-at-4-38-12-PM.png",
+    name: "Our Community Calendar",
+    appDesc:
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
-    liveSite: "https://hulu.com",
-    githubRepoToLive: "https://youtube.com",
-    inDepthDesc:
+    liveSite: "https://google.com",
+    githubRepoToLive: "https://github.com",
+    myExperience:
       "afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwuehf  apwiueh f",
     myTask: "font end",
   },
   {
     id: 3,
     img:
-      "https://i.postimg.cc/N0MRm1Qv/Screen-Shot-2020-03-31-at-8-09-46-PM.png",
-    name: "my project 1024",
-    desc:
+      "https://i.postimg.cc/bNVTd0fT/Screen-Shot-2020-05-14-at-4-37-55-PM.png",
+    name: "Our Community Calendar",
+    appDesc:
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
-    liveSite: "",
-    githubRepoToLive: "",
-    inDepthDesc:
+    liveSite: "https://google.com",
+    githubRepoToLive: "https://github.com",
+    myExperience:
       "afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwuehf  apwiueh f",
     myTask: "font end",
   },
   {
     id: 4,
     img:
-      "https://i.postimg.cc/N0MRm1Qv/Screen-Shot-2020-03-31-at-8-09-46-PM.png",
-    name: "my project 2nd to last",
-    desc:
+      "https://i.postimg.cc/Jn83SPj1/Screen-Shot-2020-05-14-at-4-37-45-PM.png",
+    name: "Our Community Calendar",
+    appDesc:
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
-    liveSite: "",
-    githubRepoToLive: "",
-    inDepthDesc:
+    liveSite: "https://google.com",
+    githubRepoToLive: "https://github.com",
+    myExperience:
       "afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwuehf  apwiueh f",
     myTask: "font end",
   },
