@@ -12,7 +12,7 @@ export default function CloserLook(props) {
     );
 
     if (filtering[0]) {
-      history.pushState({ state: filtering[0] });
+      history.push({ state: filtering[0] });
     } else {
       return <Redirect to="/" />;
     }
