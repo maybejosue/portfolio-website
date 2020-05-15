@@ -12,13 +12,12 @@ export default function CloserLook(props) {
     );
 
     if (filtering[0]) {
-      history.push({ state: filtering[0] });
+      history.replace({ state: filtering[0] });
     } else {
       return <Redirect to="/" />;
     }
   }
-
-  const shorten = history.location.state;
+  let shorten = history.location.state;
 
   return (
     <section id="closerLook" style={{ background: "white" }}>
