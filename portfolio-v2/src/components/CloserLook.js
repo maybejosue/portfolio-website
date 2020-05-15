@@ -56,14 +56,18 @@ export default function CloserLook(props) {
             Go Back
           </div>
         </div>
-        <img src={shorten.img} />
-        <div>
-          <h3>{shorten.name}</h3>
-          <p>{shorten.appDesc}</p>
-          <p>{shorten.myTask}</p>
-          <p>{shorten.myExperience}</p>
+        <div className="cl-content">
+          <div className="content-img">
+            <img src={shorten.img} />
+          </div>
+          <div className="content-text">
+            <h3>{shorten.name}</h3>
+            <p>{shorten.appDesc}</p>
+            <p>{shorten.myTask}</p>
+            <p>{shorten.myExperience}</p>
+          </div>
         </div>
-        <div>
+        <div className="btn-links">
           <div>
             <svg
               width="32"

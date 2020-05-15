@@ -423,4 +423,9 @@ body {
   color: grey;
   font-size: 1.3rem;
 }
+
+.btn-links {
+  display: flex;
+}
+
 /* == CloserLook End == */
