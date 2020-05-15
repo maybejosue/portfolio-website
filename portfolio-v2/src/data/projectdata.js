@@ -40,8 +40,7 @@ export const projectData = [
   },
   {
     id: 4,
-    img:
-      "https://i.postimg.cc/Jn83SPj1/Screen-Shot-2020-05-14-at-4-37-45-PM.png",
+    img: "https://i.postimg.cc/jCVRhgWb/this-is-it.png",
     name: "Our Community Calendar",
     appDesc:
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
