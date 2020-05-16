@@ -428,4 +428,32 @@ body {
   display: flex;
 }
 
+.content-text {
+  border: solid 1px red;
+  color: white;
+}
+
+.content-text h3 {
+  font-size: 3rem;
+  margin-bottom: 15%;
+}
+
+.content-text p {
+  font-size: 2rem;
+}
+
+.btn-links {
+  border: solid 1px red;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-links div {
+  border: solid 1px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 45px;
+}
 /* == CloserLook End == */

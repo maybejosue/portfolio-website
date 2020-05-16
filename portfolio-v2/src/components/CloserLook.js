@@ -20,7 +20,7 @@ export default function CloserLook(props) {
   let shorten = history.location.state;
 
   return (
-    <section id="closerLook" style={{ background: "white" }}>
+    <section id="closerLook">
       <div>
         <div>
           <div className="go-back">
@@ -61,9 +61,9 @@ export default function CloserLook(props) {
           </div>
           <div className="content-text">
             <h3>{shorten.name}</h3>
-            <p>{shorten.appDesc}</p>
-            <p>{shorten.myTask}</p>
-            <p>{shorten.myExperience}</p>
+            <p className="app-desc">{shorten.appDesc}</p>
+            <p className="my-task">{shorten.myTask}</p>
+            <p className="my-experience">{shorten.myExperience}</p>
           </div>
         </div>
         <div className="btn-links">
