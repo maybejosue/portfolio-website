@@ -3,6 +3,7 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 
 // components
+import Nav from "./components/Nav";
 import MobileNav from "./components/MobileNav.js";
 import Home from "./components/Home.js";
 import Aboutme from "./components/Aboutme.js";
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <div>
+            <Nav />
             <MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />
 
             <div onClick={() => setCloseNav(true)}>
