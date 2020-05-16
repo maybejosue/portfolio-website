@@ -30,7 +30,7 @@ export default function MobileNav(props) {
   }
 
   return (
-    <section id="home">
+    <section id="home" id="mobileNav">
       <nav>
         <div className="mobile-nav-container">
           <Headroom>
@@ -52,6 +52,7 @@ export default function MobileNav(props) {
                   />
                 </svg>
               </div>
+
               <div className="img-container">
                 <Link smooth duration={850} onClick={goTop}>
                   <img className="img" src={MyPic} />
