@@ -429,7 +429,7 @@ body {
 .social-container h5 {
   text-align: center;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: lighter;
   margin-bottom: 15%;
   color: #f8f6f5;
 }
@@ -457,13 +457,6 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .social-card-container {
-    width: 800px;
-    height: 120px;
-  }
-}
-
 .social-img-container {
   height: 90px;
   display: flex;
@@ -476,12 +469,6 @@ body {
 @media (min-width: 900px) {
   .social-img-container {
     height: 100px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .social-img-container {
-    height: 120px;
   }
 }
 
@@ -511,7 +498,7 @@ body {
 
 @media (min-width: 1200px) {
   .social-text-content-container h6 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -523,7 +510,7 @@ body {
 
 @media (min-width: 1200px) {
   .social-text-content-container p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 
