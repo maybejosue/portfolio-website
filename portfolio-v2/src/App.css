@@ -34,7 +34,7 @@ body {
   width: 80%;
 }
 .nav-img-container {
-  width: 90px;
+  width: 80px;
   cursor: pointer;
 }
 
@@ -59,8 +59,8 @@ body {
   color: #f8f6f5;
   background: #2b364d;
   border-radius: 8px;
-  height: 60px;
-  width: 180px;
+  height: 50px;
+  width: 150px;
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -369,15 +369,29 @@ body {
   padding-top: 15%;
 }
 
+@media (min-width: 850px) {
+  .project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
 /* == Project List End  == */
 
 /* == Project Card  == */
 
 .card-container {
   margin: 10% 5% 10% 5%;
-  border: solid 1px #1f2436;
   background: #1f2436;
   border-radius: 10px;
+}
+
+@media (min-width: 850px) {
+  .card-container {
+    margin: 5% 0% 5% 0%;
+    width: 40%;
+  }
 }
 
 .card-container h6 {
@@ -429,7 +443,7 @@ body {
 .social-container h5 {
   text-align: center;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: lighter;
   margin-bottom: 15%;
   color: #f8f6f5;
 }
@@ -457,13 +471,6 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .social-card-container {
-    width: 800px;
-    height: 120px;
-  }
-}
-
 .social-img-container {
   height: 90px;
   display: flex;
@@ -476,12 +483,6 @@ body {
 @media (min-width: 900px) {
   .social-img-container {
     height: 100px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .social-img-container {
-    height: 120px;
   }
 }
 
@@ -511,7 +512,7 @@ body {
 
 @media (min-width: 1200px) {
   .social-text-content-container h6 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -523,7 +524,7 @@ body {
 
 @media (min-width: 1200px) {
   .social-text-content-container p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 

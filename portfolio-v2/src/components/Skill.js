@@ -6,15 +6,12 @@ import { ResponsivePie } from "@nivo/pie";
 //data
 import { graphData, skillInfo } from "../data/graphdata.js";
 
-import { Animated } from "react-animated-css";
-
 export default function Skill() {
   const [dataOnClick, setDataOnClick] = useState();
-
-  let test;
+  let slice;
 
   if (dataOnClick) {
-    test = skillInfo.filter((data) => {
+    slice = skillInfo.filter((data) => {
       return dataOnClick.id === data.id;
     });
   }
@@ -80,8 +77,8 @@ export default function Skill() {
 
         {dataOnClick ? (
           <div className="slice-container">
-            <h6>{test[0].id}</h6>
-            <p>{test[0].desc}</p>
+            <h6>{slice[0].id}</h6>
+            <p>{slice[0].desc}</p>
             <p className="graph-btn" onClick={() => setDataOnClick()}>
               Return
             </p>

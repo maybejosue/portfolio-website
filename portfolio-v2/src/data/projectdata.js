@@ -15,7 +15,7 @@ export const projectData = [
   {
     id: 2,
     img:
-      "https://i.postimg.cc/4yB16V7X/Screen-Shot-2020-05-14-at-4-38-12-PM.png",
+      "https://i.postimg.cc/nzfTpHff/Screen-Shot-2020-05-14-at-4-38-33-PM.png",
     name: "Our Community Calendar",
     appDesc:
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
@@ -28,7 +28,7 @@ export const projectData = [
   {
     id: 3,
     img:
-      "https://i.postimg.cc/bNVTd0fT/Screen-Shot-2020-05-14-at-4-37-55-PM.png",
+      "https://i.postimg.cc/nzfTpHff/Screen-Shot-2020-05-14-at-4-38-33-PM.png",
     name: "Our Community Calendar",
     appDesc:
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
@@ -40,7 +40,8 @@ export const projectData = [
   },
   {
     id: 4,
-    img: "https://i.postimg.cc/jCVRhgWb/this-is-it.png",
+    img:
+      "https://i.postimg.cc/nzfTpHff/Screen-Shot-2020-05-14-at-4-38-33-PM.png",
     name: "Our Community Calendar",
     appDesc:
       "this is a test on the styling afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu afeuhfpau hapowhe po; sijf apiowhe baoiywefho aw aoiwuehf  iauwhe fo aiwu",
