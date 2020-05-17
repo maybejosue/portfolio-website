@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1200px) {
   #nav {
     display: none;
   }
@@ -76,7 +76,7 @@ body {
 
 /* == MobileNav == */
 
-@media (min-width: 851px) {
+@media (min-width: 1201px) {
   #mobileNav {
     display: none;
   }
@@ -444,6 +444,26 @@ body {
   margin-bottom: 25px;
 }
 
+@media (min-width: 600px) {
+  .social-card-container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  .social-card-container {
+    width: 650px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-card-container {
+    width: 800px;
+    height: 120px;
+  }
+}
+
 .social-img-container {
   height: 90px;
   display: flex;
@@ -451,6 +471,18 @@ body {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   width: 65px;
+}
+
+@media (min-width: 900px) {
+  .social-img-container {
+    height: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-img-container {
+    height: 120px;
+  }
 }
 
 .linkedin {
@@ -471,28 +503,28 @@ body {
   width: 100%;
 }
 
-@media (min-width: 600px) {
-  .social-card-container {
-    width: 500px;
-  }
-}
-
-@media (min-width: 900px) {
-  .social-card-container {
-    width: 650px;
-  }
-}
-
 .social-text-content-container h6 {
   font-size: 1.8rem;
   margin: 10px 0 5px 0;
   color: #f8f6f5;
 }
 
+@media (min-width: 1200px) {
+  .social-text-content-container h6 {
+    font-size: 2.5rem;
+  }
+}
+
 .social-text-content-container p {
   font-size: 1.5rem;
   padding: "10%";
   color: #f8f6f5;
+}
+
+@media (min-width: 1200px) {
+  .social-text-content-container p {
+    font-size: 2.2rem;
+  }
 }
 
 /* == Social End == */
