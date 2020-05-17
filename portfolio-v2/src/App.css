@@ -492,18 +492,27 @@ body {
   font-size: 1.3rem;
 }
 
+.content-img {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.content-img-container {
+  margin-bottom: 2%;
+}
+
 .btn-links {
   display: flex;
 }
 
 .content-text {
-  border: solid 1px red;
   color: white;
 }
 
 .content-text h3 {
   font-size: 3rem;
   margin-bottom: 15%;
+  text-align: center;
 }
 
 .content-text p {
@@ -511,13 +520,13 @@ body {
 }
 
 .btn-links {
-  border: solid 1px red;
   display: flex;
   justify-content: space-around;
 }
 
 .btn-links div {
-  border: solid 1px grey;
+  border-radius: 10px;
+  background-color: #e16410;
   display: flex;
   justify-content: center;
   align-items: center;
