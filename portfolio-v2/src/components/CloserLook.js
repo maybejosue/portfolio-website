@@ -23,7 +23,7 @@ export default function CloserLook(props) {
     <section id="closerLook">
       <div>
         <div>
-          <div className="go-back">
+          <div className="go-back" onClick={() => history.goBack()}>
             <svg
               width="32"
               height="32"
@@ -56,8 +56,8 @@ export default function CloserLook(props) {
           </div>
         </div>
         <div className="cl-content">
-          <div className="content-img">
-            <img src={shorten.img} />
+          <div className="content-img-container">
+            <img className="content-img" src={shorten.img} />
           </div>
           <div className="content-text">
             <h3>{shorten.name}</h3>
