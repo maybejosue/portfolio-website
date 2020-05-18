@@ -114,6 +114,12 @@ body {
   align-items: center;
 }
 
+@media (min-width: 650px) {
+  .img-container {
+    width: 75px;
+  }
+}
+
 .img {
   border-radius: 100px;
   border: solid 2px #f8f6f5;
@@ -199,6 +205,13 @@ body {
 .mobile-contact-anchor {
   text-decoration: none;
   color: #f8f6f5;
+}
+
+@media (min-width: 650px) {
+  .sidebar-menu {
+    border: solid 1px red;
+    width: 80%;
+  }
 }
 
 /* Open End */
@@ -331,10 +344,28 @@ body {
   margin: 5%;
 }
 
+@media (min-width: 1200px) {
+  .graph-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skill-content-container {
+    display: flex;
+  }
+}
+
 .slice-container {
   margin: 5%;
   transition: 9s;
   transition-timing-function: ease-in;
+}
+
+@media (min-width: 1200px) {
+  .slice-container {
+    width: 50%;
+  }
 }
 
 .slice-container h6 {
