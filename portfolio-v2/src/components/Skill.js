@@ -20,79 +20,81 @@ export default function Skill() {
     <section id="skills">
       <div className="skill-section-container">
         <h5 className="section-heading">Skills</h5>
-        <div className="graph-container">
-          <ResponsivePie
-            onClick={(slice) => {
-              setDataOnClick(slice);
-            }}
-            data={graphData}
-            margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
-            startAngle={-8}
-            sortByValue={true}
-            innerRadius={0.5}
-            padAngle={1}
-            cornerRadius={15}
-            colors={{ scheme: "nivo" }}
-            borderColor={{ from: "color", modifiers: [["darker", "0.2"]] }}
-            enableRadialLabels={false}
-            radialLabelsSkipAngle={7}
-            radialLabelsTextXOffset={6}
-            radialLabelsTextColor="black"
-            radialLabelsLinkOffset={-4}
-            radialLabelsLinkDiagonalLength={22}
-            radialLabelsLinkHorizontalLength={26}
-            radialLabelsLinkStrokeWidth={3}
-            radialLabelsLinkColor={{ from: "color" }}
-            sliceLabel={function (e) {
-              return e.id + " (" + e.value + "%)";
-            }}
-            slicesLabelsSkipAngle={10}
-            slicesLabelsTextColor="black"
-            animate={true}
-            motionStiffness={90}
-            motionDamping={15}
-            legends={[
-              {
-                anchor: "bottom",
-                direction: "row",
-                translateY: 56,
-                itemWidth: 50,
-                itemHeight: 5,
-                itemTextColor: "red",
-                symbolSize: 10,
-                symbolShape: "circle",
+        <div className="skill-content-container">
+          <div className="graph-container">
+            <ResponsivePie
+              onClick={(slice) => {
+                setDataOnClick(slice);
+              }}
+              data={graphData}
+              margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
+              startAngle={-8}
+              sortByValue={true}
+              innerRadius={0.5}
+              padAngle={1}
+              cornerRadius={15}
+              colors={{ scheme: "nivo" }}
+              borderColor={{ from: "color", modifiers: [["darker", "0.2"]] }}
+              enableRadialLabels={false}
+              radialLabelsSkipAngle={7}
+              radialLabelsTextXOffset={6}
+              radialLabelsTextColor="black"
+              radialLabelsLinkOffset={-4}
+              radialLabelsLinkDiagonalLength={22}
+              radialLabelsLinkHorizontalLength={26}
+              radialLabelsLinkStrokeWidth={3}
+              radialLabelsLinkColor={{ from: "color" }}
+              sliceLabel={function (e) {
+                return e.id + " (" + e.value + "%)";
+              }}
+              slicesLabelsSkipAngle={10}
+              slicesLabelsTextColor="black"
+              animate={true}
+              motionStiffness={90}
+              motionDamping={15}
+              legends={[
+                {
+                  anchor: "bottom",
+                  direction: "row",
+                  translateY: 56,
+                  itemWidth: 50,
+                  itemHeight: 5,
+                  itemTextColor: "red",
+                  symbolSize: 10,
+                  symbolShape: "circle",
 
-                effects: [
-                  {
-                    on: "hover",
-                    style: {
-                      itemTextColor: "black",
+                  effects: [
+                    {
+                      on: "hover",
+                      style: {
+                        itemTextColor: "black",
+                      },
                     },
-                  },
-                ],
-              },
-            ]}
-          />
-        </div>
+                  ],
+                },
+              ]}
+            />
+          </div>
 
-        {dataOnClick ? (
-          <div className="slice-container">
-            <h6>{slice[0].id}</h6>
-            <p>{slice[0].desc}</p>
-            <p className="graph-btn" onClick={() => setDataOnClick()}>
-              Return
-            </p>
-          </div>
-        ) : (
-          <div className="slice-container">
-            <h6>Graph</h6>
-            <p>
-              Hello ahsoif s ;ajf [as ajskd f ahspofhuaw asjf lakws aoshdfp akaj
-              sdpoifa aijspoid fp iajspdfoi oaisjdpf oaisjd fpi poidjc oa sa[
-              oaisj [oj aoijsd
-            </p>
-          </div>
-        )}
+          {dataOnClick ? (
+            <div className="slice-container">
+              <h6>{slice[0].id}</h6>
+              <p>{slice[0].desc}</p>
+              <p className="graph-btn" onClick={() => setDataOnClick()}>
+                Return
+              </p>
+            </div>
+          ) : (
+            <div className="slice-container">
+              <h6>Graph</h6>
+              <p>
+                Hello ahsoif s ;ajf [as ajskd f ahspofhuaw asjf lakws aoshdfp
+                akaj sdpoifa aijspoid fp iajspdfoi oaisjdpf oaisjd fpi poidjc oa
+                sa[ oaisj [oj aoijsd
+              </p>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );

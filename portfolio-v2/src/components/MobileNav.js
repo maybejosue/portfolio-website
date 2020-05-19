@@ -15,8 +15,13 @@ export default function MobileNav(props) {
   const scroll = Scroll.animateScroll;
 
   function open() {
-    document.getElementById("sidebar-menu").style.width = "60%";
-    setIsOpen(true);
+    if (window.matchMedia("(min-width: 600px)").matches) {
+      document.getElementById("sidebar-menu").style.width = "50%";
+      setIsOpen(true);
+    } else {
+      document.getElementById("sidebar-menu").style.width = "60%";
+      setIsOpen(true);
+    }
   }
 
   function close() {
