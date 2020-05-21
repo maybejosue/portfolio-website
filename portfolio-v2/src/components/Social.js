@@ -9,7 +9,7 @@ export default function Social() {
   return (
     <section id="social">
       <div className="social-container">
-        <h5>Social Media</h5>
+        <h5 className="section-heading">Social Media</h5>
         <div className="social-card-container">
           <div className="social-img-container linkedin">
             <img src={linkedin} />

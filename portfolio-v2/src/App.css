@@ -207,13 +207,6 @@ body {
   color: #f8f6f5;
 }
 
-@media (min-width: 650px) {
-  .sidebar-menu {
-    border: solid 1px red;
-    width: 80%;
-  }
-}
-
 /* Open End */
 
 /* == MobileNav End == */
@@ -297,11 +290,12 @@ body {
 
 .section-heading {
   width: 75%;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
   text-align: center;
   margin: 0 0 10% 12.5%;
   color: #f8f6f5;
+  letter-spacing: 1px;
 }
 
 .about-me-container {
@@ -310,12 +304,14 @@ body {
 }
 
 .about-me-img-container {
-  margin: 5px;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .about-me-img {
   border-radius: 10px;
+  width: 300px;
+  display: flex;
 }
 
 .about-me-paragraph-container {
@@ -471,13 +467,13 @@ body {
   margin-top: 20%;
 }
 
-.social-container h5 {
+/* .social-container h5 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: lighter;
   margin-bottom: 15%;
   color: #f8f6f5;
-}
+} */
 
 .social-card-container {
   display: flex;
