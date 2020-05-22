@@ -303,9 +303,23 @@ body {
   padding-top: 15%;
 }
 
+@media (min-width: 850px) {
+  .about-me-content-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 2% 0 2%;
+  }
+}
+
 .about-me-img-container {
   margin: 0 auto;
-  width: 300px;
+  width: 320px;
+}
+
+@media (min-width: 850px) {
+  .about-me-img-container {
+    width: 1300px;
+  }
 }
 
 .about-me-img {
@@ -316,6 +330,13 @@ body {
   margin: 5px;
   padding: 30px;
   margin-bottom: 15%;
+}
+
+@media (min-width: 850px) {
+  .about-me-paragraph-container {
+    all: unset;
+    padding: 2%;
+  }
 }
 
 .about-me-paragraph-container p {
@@ -337,13 +358,13 @@ body {
   margin: 5%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
   .graph-container {
     width: 50%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
   .skill-content-container {
     display: flex;
   }
@@ -355,7 +376,7 @@ body {
   transition-timing-function: ease-in;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
   .slice-container {
     width: 50%;
   }
@@ -464,14 +485,6 @@ body {
   margin-top: 20%;
 }
 
-/* .social-container h5 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: lighter;
-  margin-bottom: 15%;
-  color: #f8f6f5;
-} */
-
 .social-card-container {
   display: flex;
   background-color: #1f2436;
@@ -569,7 +582,7 @@ body {
 }
 
 .content-img-container {
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .btn-links {
@@ -581,7 +594,7 @@ body {
 }
 
 .content-text h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 15%;
   text-align: center;
 }
