@@ -43,14 +43,14 @@ export default function CloserLook(props) {
               <p className="my-task">{shorten.myTask}</p>
               <p className="my-experience">{shorten.myExperience}</p>
             </div>
-          </div>
-        </div>
-        <div className="btn-links">
-          <div>
-            <LiveView />
-          </div>
-          <div>
-            <SourceCode />
+            <div className="btn-links">
+              <div>
+                <LiveView />
+              </div>
+              <div>
+                <SourceCode />
+              </div>
+            </div>
           </div>
         </div>
       </div>

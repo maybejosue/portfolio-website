@@ -642,6 +642,19 @@ body {
   margin-bottom: 5%;
 }
 
+@media (min-width: 1200px) {
+  .content-img-container {
+    border: solid 1px green;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cl-content {
+    display: flex;
+  }
+}
+
 .btn-links {
   display: flex;
   margin-bottom: 5%;
@@ -649,6 +662,13 @@ body {
 
 .content-text {
   color: white;
+}
+
+@media (min-width: 1200px) {
+  .content-text {
+    border: solid 1px red;
+    width: 50%;
+  }
 }
 
 .content-text h3 {
