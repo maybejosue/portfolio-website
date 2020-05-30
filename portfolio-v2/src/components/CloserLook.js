@@ -38,17 +38,19 @@ export default function CloserLook(props) {
           </div>
           <div className="content-text">
             <h3>{shorten.name}</h3>
-            <p className="app-desc">{shorten.appDesc}</p>
-            <p className="my-task">{shorten.myTask}</p>
-            <p className="my-experience">{shorten.myExperience}</p>
-          </div>
-        </div>
-        <div className="btn-links">
-          <div>
-            <LiveView />
-          </div>
-          <div>
-            <SourceCode />
+            <div className="content-info">
+              <p className="app-desc">{shorten.appDesc}</p>
+              <p className="my-task">{shorten.myTask}</p>
+              <p className="my-experience">{shorten.myExperience}</p>
+            </div>
+            <div className="btn-links">
+              <div>
+                <LiveView />
+              </div>
+              <div>
+                <SourceCode />
+              </div>
+            </div>
           </div>
         </div>
       </div>
