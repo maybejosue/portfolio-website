@@ -226,9 +226,15 @@ body {
 }
 
 .gif-container {
-  width: 50%;
+  width: 750px;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .gif-container {
+    display: none;
+  }
 }
 
 .main-header {
@@ -633,6 +639,12 @@ body {
   font-size: 1.3rem;
 }
 
+@media (min-width: 1200px) {
+  .go-back {
+    position: relative;
+  }
+}
+
 .content-img {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -644,14 +656,19 @@ body {
 
 @media (min-width: 1200px) {
   .content-img-container {
-    border: solid 1px green;
-    width: 50%;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    margin: initial;
   }
 }
 
 @media (min-width: 1200px) {
   .cl-content {
     display: flex;
+
+    justify-content: space-evenly;
+    margin-top: 50px;
   }
 }
 
@@ -666,8 +683,7 @@ body {
 
 @media (min-width: 1200px) {
   .content-text {
-    border: solid 1px red;
-    width: 50%;
+    width: 40%;
   }
 }
 
