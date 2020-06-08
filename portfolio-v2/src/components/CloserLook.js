@@ -40,8 +40,12 @@ export default function CloserLook(props) {
             <h3>{shorten.name}</h3>
             <div className="content-info">
               <p className="app-desc">{shorten.appDesc}</p>
-              <p className="my-task">{shorten.myTask}</p>
-              <p className="my-experience">{shorten.myExperience}</p>
+              <p className="my-task">{shorten.techStack}</p>
+              {shorten.responsibility.map((task) => (
+                <ul>
+                  <li>{task}</li>
+                </ul>
+              ))}
             </div>
             <div className="btn-links">
               <div>
