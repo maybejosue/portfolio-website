@@ -6,6 +6,8 @@ import { ResponsivePie } from "@nivo/pie";
 //data
 import { graphData, skillInfo } from "../data/graphdata.js";
 
+import Check from "../utils/Check.js";
+
 export default function Skill() {
   const [dataOnClick, setDataOnClick] = useState();
   let slice;
@@ -79,10 +81,16 @@ export default function Skill() {
           {dataOnClick ? (
             <div className="slice-container">
               <h6>{slice[0].id}</h6>
-              <p>{slice[0].desc}</p>
-              <p className="graph-btn" onClick={() => setDataOnClick()}>
-                Return
-              </p>
+              <div className="sc-skill-container">
+                {slice[0].desc.map((skill) => (
+                  <div className="sc-check-and-text-container">
+                    <div className="sc-check-container">
+                      <Check />
+                    </div>
+                    <p>{skill}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           ) : (
             <div className="slice-container">
