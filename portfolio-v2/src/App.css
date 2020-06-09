@@ -156,11 +156,23 @@ body {
   background-color: #1b4a79;
 }
 
+@media (min-width: 850px) {
+  .anchors {
+    font-size: 2.8rem;
+  }
+}
+
 .img-container-open {
   width: 80px;
   margin-left: 30%;
   margin-bottom: 25%;
   background-color: #1b4a79;
+}
+
+@media (min-width: 850px) {
+  .img-container-open {
+    width: 100px;
+  }
 }
 
 .img-open {
@@ -197,6 +209,12 @@ body {
   text-align: center;
 }
 
+@media (min-width: 850px) {
+  .mobile-contact-container {
+    font-size: 2.8rem;
+  }
+}
+
 .mobile-contact-container:hover {
   background: #0cce99;
   border: solid 2px #4875de;
@@ -215,6 +233,12 @@ body {
 
 .home-container {
   padding: 40% 0 30% 0;
+}
+
+@media (min-width: 850px) {
+  .home-container {
+    padding: 40% 0 20% 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -247,6 +271,12 @@ body {
   font-size: 1.2rem;
 }
 
+@media (min-width: 850px) {
+  .quote {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 1200px) {
   .main-header {
     text-align: start;
@@ -259,9 +289,9 @@ body {
   color: #f8f6f5;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
   .main-header h1 {
-    font-size: 4.2rem;
+    font-size: 6rem;
     padding: 0px 0px 10px 0px;
   }
 }
@@ -298,6 +328,12 @@ body {
   margin: 0 auto;
   font-size: 1.5rem;
   color: #f8f6f5;
+}
+
+@media (min-width: 850px) {
+  .btn {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -393,9 +429,17 @@ body {
   width: 320px;
 }
 
+@media (min-width: 650px) {
+  .about-me-img-container {
+    width: 400px;
+  }
+}
+
 @media (min-width: 850px) {
   .about-me-img-container {
-    width: 1300px;
+    width: 1500px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -485,6 +529,10 @@ body {
   color: #f8f6f5;
 }
 
+.starter-graph-text {
+  padding: 2%;
+}
+
 /* == Skill End == */
 
 /* == Project List  == */
@@ -520,8 +568,7 @@ body {
 }
 
 .card-container h6 {
-  font-size: 2rem;
-  font-weight: lighter;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   color: #f8f6f5;
