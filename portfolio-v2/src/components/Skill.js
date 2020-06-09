@@ -93,7 +93,7 @@ export default function Skill() {
               </div>
             </div>
           ) : (
-            <div className="slice-container">
+            <div className="slice-container starter-graph-text">
               <h6>Graph</h6>
               <p>
                 Hello ahsoif s ;ajf [as ajskd f ahspofhuaw asjf lakws aoshdfp
