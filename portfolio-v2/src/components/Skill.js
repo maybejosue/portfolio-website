@@ -94,11 +94,10 @@ export default function Skill() {
             </div>
           ) : (
             <div className="slice-container starter-graph-text">
-              <h6>Graph</h6>
+              <h6>Click any slice on the Graph!</h6>
               <p>
-                Hello ahsoif s ;ajf [as ajskd f ahspofhuaw asjf lakws aoshdfp
-                akaj sdpoifa aijspoid fp iajspdfoi oaisjdpf oaisjd fpi poidjc oa
-                sa[ oaisj [oj aoijsd
+                Graph based on what I'm most comfortable with in terms of tools,
+                frontend, backend, computer science.
               </p>
             </div>
           )}

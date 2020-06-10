@@ -10,7 +10,12 @@ export default function Social() {
     <section id="social">
       <div className="social-container">
         <h5 className="section-heading">Social Media</h5>
-        <div className="social-card-container">
+
+        <a
+          href="https://www.linkedin.com/in/josue-rodriguez-e90210"
+          target="_blank"
+          className="social-card-container"
+        >
           <div className="social-img-container linkedin">
             <img src={linkedin} />
           </div>
@@ -18,9 +23,13 @@ export default function Social() {
             <h6>Linkedin</h6>
             <p>www.linkedin.com/in/josue-rodriguez-e90210</p>
           </div>
-        </div>
+        </a>
 
-        <div className="social-card-container">
+        <a
+          className="social-card-container"
+          href="https://github.com/JosueRodriguez-webdev"
+          target="_blank"
+        >
           <div className="social-img-container github">
             <img src={github} />
           </div>
@@ -28,9 +37,12 @@ export default function Social() {
             <h6>Github</h6>
             <p>https://github.com/JosueRodriguez-webdev</p>
           </div>
-        </div>
-
-        <div className="social-card-container">
+        </a>
+        <a
+          href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=DmwnWrRsqQCRHtCkcJQnVKLFJxgKXMnpKjTvNZVkjBGfHsxQdqXNrLDGnRvCntHKbRmcttBRRScG"
+          target="_blank"
+          className="social-card-container"
+        >
           <div className="social-img-container email">
             <img src={email} />
           </div>
@@ -38,7 +50,7 @@ export default function Social() {
             <h6>Email</h6>
             <p>jr2589213@gmail.com</p>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );
