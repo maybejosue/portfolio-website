@@ -14,6 +14,10 @@ body {
   behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* == Nav == */
 
 #nav {
@@ -104,6 +108,7 @@ body {
   height: 35px;
   margin-top: 12px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .img-container {
@@ -112,6 +117,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 @media (min-width: 650px) {
@@ -154,6 +160,7 @@ body {
   display: block;
   transition: 0.1s;
   background-color: #1b4a79;
+  cursor: pointer;
 }
 
 @media (min-width: 850px) {
@@ -178,6 +185,7 @@ body {
 .img-open {
   border-radius: 100px;
   border: solid 2px #151823;
+  cursor: pointer;
 }
 
 .svg-container-open {
@@ -191,6 +199,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .mobile-contact-container {
@@ -207,6 +216,7 @@ body {
   width: 75%;
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 @media (min-width: 850px) {
@@ -335,6 +345,7 @@ body {
   margin: 0 auto;
   font-size: 1.5rem;
   color: #f8f6f5;
+  cursor: pointer;
 }
 
 @media (min-width: 850px) {
@@ -611,6 +622,7 @@ body {
   justify-content: center;
   padding: 5px 6px 5px 6px;
   background: #0cce99;
+  cursor: pointer;
 }
 
 /* == Project Card End == */
@@ -675,6 +687,10 @@ body {
   margin-left: 25px;
   height: 90px;
   width: 100%;
+}
+
+.social-card-container:hover {
+  background: #2e3652;
 }
 
 .social-text-content-container h6 {
