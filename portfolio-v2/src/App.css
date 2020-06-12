@@ -242,7 +242,12 @@ a {
 /* == Home == */
 
 .home-container {
+  border: solid 1px red;
   padding: 40% 0 30% 0;
+}
+
+.home-content-container {
+  border: solid 1px grey;
 }
 
 @media (min-width: 850px) {
@@ -273,6 +278,7 @@ a {
 
 .main-header {
   text-align: center;
+  border: solid 1px yellow;
 }
 
 .quote {
