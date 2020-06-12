@@ -105,7 +105,6 @@ a {
   align-items: center;
   justify-content: center;
   background: #1f2436;
-  border: solid 1px salmon;
   width: 35px;
   height: 35px;
   margin-top: 12px;
@@ -118,7 +117,6 @@ a {
   display: flex;
   position: relative;
   justify-content: center;
-  border: solid 1px aqua;
   align-items: center;
   cursor: pointer;
 }
@@ -249,10 +247,6 @@ a {
   padding: 40% 0 30% 0;
 }
 
-.home-content-container {
-  border: solid 1px grey;
-}
-
 @media (min-width: 850px) {
   .home-container {
     padding: 40% 0 20% 0;
@@ -281,7 +275,6 @@ a {
 
 .main-header {
   text-align: center;
-  border: solid 1px yellow;
 }
 
 .quote {
