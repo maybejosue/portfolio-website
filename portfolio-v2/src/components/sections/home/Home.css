@@ -1,7 +1,6 @@
 /* == Home == */
 
 .home-container {
-  border: solid 1px red;
   padding: 40% 0 30% 0;
 }
 
@@ -71,11 +70,6 @@
     font-size: 5rem;
     padding: 10px 0px 10px 0px;
   }
-}
-
-.main-header h3 {
-  font-size: 2.5rem;
-  transition: 0.3s;
 }
 
 .sub-header {
