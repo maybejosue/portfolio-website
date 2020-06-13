@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "../App.css";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
+import "./MobileNav.css";
 
 // Image
-import MyPic from "../img/professional-pic.png";
+import MyPic from "../../../img/professional-pic.png";
 
 //react headroom
 import Headroom from "react-headroom";

@@ -3,14 +3,14 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 
 // components
-import Nav from "./components/Nav";
-import MobileNav from "./components/MobileNav.js";
-import Home from "./components/Home.js";
-import Aboutme from "./components/Aboutme.js";
-import Skill from "./components/Skill.js";
-import ProjectList from "./components/ProjectList.js";
-import Social from "./components/Social.js";
-import CloserLook from "./components/CloserLook.js";
+import Nav from "./components/nav/desktopnav/Nav.js";
+import MobileNav from "./components/nav/mobilenav/MobileNav.js";
+import Home from "./components/sections/home/Home.js";
+import Aboutme from "./components/sections/aboutme/Aboutme.js";
+import Skill from "./components/sections/skill/Skill.js";
+import ProjectList from "./components/sections/projects/ProjectList.js";
+import Social from "./components/sections/social/Social.js";
+import CloserLook from "./components/sections/closerlook/CloserLook.js";
 
 function App() {
   const [closeNav, setCloseNav] = useState(true);

@@ -1,9 +1,10 @@
 import React from "react";
+import "./CloserLook.css";
 import { useHistory, Redirect } from "react-router-dom";
-import { projectData } from "../data/projectdata.js";
+import { projectData } from "../../../data/projectdata.js";
 
 // SVGs
-import { GoBack, LiveView, SourceCode } from "../utils/index.js";
+import { GoBack, LiveView, SourceCode } from "../../../utils/index.js";
 
 export default function CloserLook(props) {
   const history = useHistory();

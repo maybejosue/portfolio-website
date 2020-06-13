@@ -1,0 +1,16 @@
+/* == Project List  == */
+
+.project-container {
+  margin-top: 20%;
+  padding-top: 15%;
+}
+
+@media (min-width: 850px) {
+  .project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/* == Project List End  == */

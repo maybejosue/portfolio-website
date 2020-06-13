@@ -1,10 +1,11 @@
 import React from "react";
+import "./ProjectList.css";
 
 // Components
 import { ProjectCard } from "./ProjectCard.js";
 
 // Data for cards being displayed
-import { projectData } from "../data/projectdata.js";
+import { projectData } from "../../../data/projectdata.js";
 
 export default function ProjectList() {
   return (
