@@ -1,8 +1,9 @@
 import React from "react";
+import "./ProjectCard.css";
 import { useHistory } from "react-router-dom";
 
 // SVGs
-import { Expand } from "../utils/index.js";
+import { Expand } from "../../../utils/index.js";
 
 export const ProjectCard = ({ project }) => {
   const { name, img, id } = project;

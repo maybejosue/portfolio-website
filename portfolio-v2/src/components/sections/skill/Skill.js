@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import "./Skill.css";
 
 //graph
 import { ResponsivePie } from "@nivo/pie";
 
 //data
-import { graphData, skillInfo } from "../data/graphdata.js";
+import { graphData, skillInfo } from "../../../data/graphdata.js";
 
-import Check from "../utils/Check.js";
+import Check from "../../../utils/Check.js";
 
 export default function Skill() {
   const [dataOnClick, setDataOnClick] = useState();

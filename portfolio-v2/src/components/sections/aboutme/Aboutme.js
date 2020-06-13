@@ -1,7 +1,9 @@
 import React from "react";
 
+import "./Aboutme.css";
+
 //images
-import fillerpic from "../img/filler-pic.jpg";
+import fillerpic from "../../../img/filler-pic.jpg";
 
 export default function Aboutme() {
   return (
