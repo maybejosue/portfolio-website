@@ -10,7 +10,7 @@ export const ProjectCard = ({ project }) => {
   const history = useHistory();
 
   const sendToCloserLook = (siteName, projectData) => {
-    history.push(`/${siteName}`, projectData);
+    history.push(`/cl/${siteName}`, projectData);
     window.scroll(0, 0);
   };
 

@@ -5,6 +5,7 @@
   position: absolute;
   font-size: 1.3rem;
   color: #0cce99;
+  cursor: pointer;
 }
 
 @media (min-width: 850px) {
@@ -26,7 +27,6 @@
   .content-img-container {
     width: 500px;
     display: flex;
-
     align-items: center;
     margin: initial;
   }
@@ -60,12 +60,6 @@
     width: 40%;
   }
 }
-
-/* @media (min-width: 1200px) {
-  .content-text {
-    width: 40%;
-  }
-} */
 
 .content-text h3 {
   font-size: 2.5rem;
@@ -147,5 +141,10 @@ li {
   align-items: center;
   width: 95px;
   height: 45px;
+  cursor: pointer;
+}
+
+.btn-links div:hover {
+  background: #0bf0b3;
 }
 /* == CloserLook End == */
