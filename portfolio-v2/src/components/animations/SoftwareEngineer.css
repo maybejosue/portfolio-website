@@ -8,6 +8,12 @@
 
 @media (min-width: 850px) {
   .inf-animate {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inf-animate {
     font-size: 3rem;
   }
 }
@@ -35,7 +41,7 @@
   justify-content: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
   .software-engineer-animation-container {
     justify-content: start;
   }
