@@ -68,7 +68,7 @@
 
 .about-me-paragraph-container p {
   font-size: 1.8rem;
-  color: #f8f6f5;
+  color: red;
 }
 
 @media (min-width: 850px) {
@@ -76,13 +76,6 @@
     all: inherit;
     color: #f8f6f5;
     padding: 2%;
-  }
-}
-
-@media (min-width: 850px) {
-  .about-me-paragraph-container p {
-    font-size: 1.8rem;
-    color: #f8f6f5;
   }
 }
 
