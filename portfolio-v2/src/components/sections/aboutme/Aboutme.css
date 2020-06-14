@@ -15,7 +15,7 @@
   padding-top: 15%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
   .about-me-container {
     margin-top: 5%;
     padding-top: 10%;

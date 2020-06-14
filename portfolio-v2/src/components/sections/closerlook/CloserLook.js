@@ -41,7 +41,7 @@ export default function CloserLook(props) {
             <h3>{shorten.name}</h3>
             <div className="content-info">
               <p className="app-desc">
-                <span>App Description:</span>
+                <span className="cl-span">App Description:</span>
                 <br />
                 <br />
                 {shorten.appDesc}
@@ -49,7 +49,7 @@ export default function CloserLook(props) {
                 <br />
               </p>
               <p className="my-task">
-                <span>Tech Stack:</span>
+                <span className="cl-span">Tech Stack:</span>
                 <br />
                 <br />
                 {shorten.techStack}
@@ -57,7 +57,7 @@ export default function CloserLook(props) {
                 <br />
               </p>
               <p>
-                <span>Responsibilities:</span>
+                <span className="cl-span">Responsibilities:</span>
                 <br />
                 <br />
                 <div className="responsibilities">
