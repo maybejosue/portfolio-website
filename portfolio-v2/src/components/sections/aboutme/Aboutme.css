@@ -66,6 +66,11 @@
   margin-bottom: 15%;
 }
 
+.about-me-paragraph-container p {
+  font-size: 1.8rem;
+  color: #f8f6f5;
+}
+
 @media (min-width: 850px) {
   .about-me-paragraph-container {
     all: unset;
@@ -74,9 +79,11 @@
   }
 }
 
-.about-me-paragraph-container p {
-  font-size: 1.8rem;
-  color: #f8f6f5;
+@media (min-width: 850px) {
+  .about-me-paragraph-container p {
+    font-size: 1.8rem;
+    color: #f8f6f5;
+  }
 }
 
 /* == AboutMe End == */
