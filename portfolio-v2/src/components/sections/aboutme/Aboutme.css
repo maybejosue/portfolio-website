@@ -73,7 +73,7 @@
 
 @media (min-width: 850px) {
   .about-me-paragraph-container {
-    all: unset;
+    all: inherit;
     color: #f8f6f5;
     padding: 2%;
   }
