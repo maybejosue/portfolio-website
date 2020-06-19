@@ -114,6 +114,10 @@
   cursor: pointer;
 }
 
+.btn:hover {
+  background-image: linear-gradient(147deg, #f8a60e 0%, #ff4848 74%);
+}
+
 @media (min-width: 850px) {
   .btn {
     font-size: 1.5rem;

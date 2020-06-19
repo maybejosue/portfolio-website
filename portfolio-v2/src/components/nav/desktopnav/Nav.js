@@ -21,7 +21,11 @@ export default function Nav() {
         <div className="nav-normal-link-container">
           <div className="nav-img-container">
             <Link smooth duration={850} onClick={goTop}>
-              <img src={MyPic} className="img" />
+              <img
+                src={MyPic}
+                className="img"
+                alt="Professional picture of Josue Rodriguez"
+              />
             </Link>
           </div>
           <div className="nav-links">

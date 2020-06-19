@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 //animation
 import SoftwareEngineer from "../../animations/SoftwareEngineer.js";
 
-import test from "../../../utils/gif.gif";
+import gif from "../../../utils/gif.gif";
 
 export default function Home(props) {
   return (
@@ -35,7 +35,7 @@ export default function Home(props) {
           </div>
         </div>
         <div className="gif-container">
-          <img src={test} className="gif" />
+          <img src={gif} className="gif" alt="Images of Projects GIF" />
         </div>
       </div>
     </section>
