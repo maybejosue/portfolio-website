@@ -35,7 +35,11 @@ export default function CloserLook(props) {
         </div>
         <div className="cl-content">
           <div className="content-img-container">
-            <img className="content-img" src={shorten.img} />
+            <img
+              className="content-img"
+              src={shorten.img}
+              alt="Picture of project"
+            />
           </div>
           <div className="content-text">
             <h3>{shorten.name}</h3>

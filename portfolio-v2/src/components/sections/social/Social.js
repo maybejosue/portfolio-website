@@ -18,7 +18,7 @@ export default function Social() {
           className="social-card-container"
         >
           <div className="social-img-container linkedin">
-            <img src={linkedin} />
+            <img src={linkedin} alt="Linkedin logo" />
           </div>
           <div className="social-text-content-container">
             <h6>Linkedin</h6>
@@ -32,7 +32,7 @@ export default function Social() {
           target="_blank"
         >
           <div className="social-img-container github">
-            <img src={github} />
+            <img src={github} alt="Github logo" />
           </div>
           <div className="social-text-content-container">
             <h6>Github</h6>
@@ -45,7 +45,7 @@ export default function Social() {
           className="social-card-container"
         >
           <div className="social-img-container email">
-            <img src={email} />
+            <img src={email} alt="Email / Gmail logo" />
           </div>
           <div className="social-text-content-container">
             <h6>Email</h6>
