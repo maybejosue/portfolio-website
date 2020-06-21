@@ -60,11 +60,7 @@ export default function MobileNav(props) {
 
               <div className="img-container">
                 <Link smooth duration={850} onClick={goTop}>
-                  <img
-                    className="img"
-                    src={MyPic}
-                    alt="Professional picture of Josue Rodriguez"
-                  />
+                  <img className="img" src={MyPic} alt="Josue Rodriguez" />
                 </Link>
               </div>
             </div>
@@ -92,11 +88,7 @@ export default function MobileNav(props) {
             </div>
             <div className="img-container-open">
               <Link smooth duration={850} onClick={goTop}>
-                <img
-                  className="img-open"
-                  src={MyPic}
-                  alt="Professional picture of Josue Rodriguez"
-                />
+                <img className="img-open" src={MyPic} alt="Josue Rodriguez" />
               </Link>
             </div>
             <div>

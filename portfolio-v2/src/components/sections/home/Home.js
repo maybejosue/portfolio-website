@@ -30,7 +30,9 @@ export default function Home(props) {
               to="aboutme"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <p className="btn">Get To Know Me</p>
+              <p className="btn" title="Go to next section">
+                Get To Know Me
+              </p>
             </Link>
           </div>
         </div>
