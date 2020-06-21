@@ -1,0 +1,54 @@
+/* == SoftwareEngineer == */
+
+.inf-animate {
+  animation-iteration-count: infinite;
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+
+@media (min-width: 850px) {
+  .inf-animate {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inf-animate {
+    font-size: 3rem;
+  }
+}
+
+.software-text,
+.engineer-text {
+  display: flex;
+  padding-left: 8px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .software-text {
+    padding: 0;
+  }
+}
+
+.test {
+  display: flex;
+}
+
+.software-engineer-animation-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 850px) {
+  .software-engineer-animation-container {
+    justify-content: start;
+  }
+}
+
+.animate {
+  color: #4875de;
+}
+
+/* == SoftwareEngineer End == */

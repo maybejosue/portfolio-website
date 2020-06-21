@@ -1,4 +1,5 @@
 import React from "react";
+import "./SoftwareEngineer.css";
 
 //animation
 import { Animated } from "react-animated-css";

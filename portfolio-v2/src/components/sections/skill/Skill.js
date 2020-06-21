@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import "./Skill.css";
 
 //graph
 import { ResponsivePie } from "@nivo/pie";
 
 //data
-import { graphData, skillInfo } from "../data/graphdata.js";
+import { graphData, skillInfo } from "../../../data/graphdata.js";
+
+import Check from "../../../utils/Check.js";
 
 export default function Skill() {
   const [dataOnClick, setDataOnClick] = useState();
@@ -79,18 +82,23 @@ export default function Skill() {
           {dataOnClick ? (
             <div className="slice-container">
               <h6>{slice[0].id}</h6>
-              <p>{slice[0].desc}</p>
-              <p className="graph-btn" onClick={() => setDataOnClick()}>
-                Return
-              </p>
+              <div className="sc-skill-container">
+                {slice[0].desc.map((skill) => (
+                  <div className="sc-check-and-text-container">
+                    <div className="sc-check-container">
+                      <Check />
+                    </div>
+                    <p>{skill}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           ) : (
-            <div className="slice-container">
-              <h6>Graph</h6>
+            <div className="slice-container starter-graph-text">
+              <h6>Click any slice on the Graph!</h6>
               <p>
-                Hello ahsoif s ;ajf [as ajskd f ahspofhuaw asjf lakws aoshdfp
-                akaj sdpoifa aijspoid fp iajspdfoi oaisjdpf oaisjd fpi poidjc oa
-                sa[ oaisj [oj aoijsd
+                Graph based on what I'm most comfortable with in terms of tools,
+                frontend, backend, computer science.
               </p>
             </div>
           )}

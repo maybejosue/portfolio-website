@@ -1,10 +1,10 @@
 import React from "react";
-import "../App.css";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
+import "./Nav.css";
 
 // Image
-import MyPic from "../img/professional-pic.png";
+import MyPic from "../../../img/professional-pic.png";
 
 //react headroom
 import Headroom from "react-headroom";
@@ -21,7 +21,11 @@ export default function Nav() {
         <div className="nav-normal-link-container">
           <div className="nav-img-container">
             <Link smooth duration={850} onClick={goTop}>
-              <img src={MyPic} className="img" />
+              <img
+                src={MyPic}
+                className="img"
+                alt="Professional picture of Josue Rodriguez"
+              />
             </Link>
           </div>
           <div className="nav-links">

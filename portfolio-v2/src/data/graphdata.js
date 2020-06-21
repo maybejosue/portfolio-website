@@ -2,7 +2,7 @@ export const graphData = [
   {
     id: "Frontend",
     label: "Frontend",
-    value: 50,
+    value: 40,
     color: "hsl(313, 70%, 50%)",
   },
   {
@@ -17,35 +17,64 @@ export const graphData = [
     value: 30,
     color: "hsl(202, 70%, 50%)",
   },
+  {
+    id: "CS",
+    label: "Computer Science",
+    value: 10,
+    color: "hsl(323, 70%, 50%)",
+  },
 ];
 
 // {
-//   id: "React.js",
-//   label: "React.js",
-//   value: 205,
-//   color: "hsl(323, 70%, 50%)",
-// },
-// {
-//   id: "Node.js",
-//   label: "Node.js",
-//   value: 579,
+// next color will be...
 //   color: "hsl(283, 70%, 50%)",
 // },
 
 export const skillInfo = [
   {
     id: "Frontend",
-    desc:
-      "at erat pellentesque adipiscing commodo. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Nibhtellus molestie nunc non. Euismod lacinia at quis risus sedvulputate odio ut enim. Tellus elementum sagittis vitae etleo. Justo eget magna fermentum iaculis eu non diam. Feliseget velit aliquet sagittis id consectetur purus ut faucibus.Mollis aliquam ut porttitor leo a diam sollicitudin tempor.Morbi enim nunc faucibus a pellentesque sit amet. Sed viverratellus in hac habitasse",
+    desc: [
+      "HTML",
+      "LESS",
+      "Javascript",
+      "React",
+      "Jest",
+      "Testing",
+      "Redux",
+      "Formik",
+      "Yup",
+      "AWS",
+      "CSS",
+      "Material-UI",
+      "Bootstrap",
+      "Styled-Components",
+    ],
   },
   {
     id: "Backend",
-    desc:
-      "at erat pellentesque adipiscing commodo. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Nibhtellus molestie nunc non. Euismod lacinia at quis risus sedvulputate odio ut enim. Tellus elementum sagittis vitae etleo. Justo eget magna fermentum iaculis eu non diam. Feliseget velit aliquet sagittis id consectetur purus ut faucibus.Mollis aliquam ut porttitor leo a diam sollicitudin tempor.Morbi enim nunc faucibus a pellentesque sit amet. Sed viverratellus in hac habitasse",
+    desc: [
+      "Node.js",
+      "AJAX",
+      "JSON Web Token",
+      "Knex.js",
+      "Supertest",
+      "Postman",
+      "Express.js",
+      "Heroku",
+      "Authentication",
+      "Express Session",
+      "SQLite3",
+      "Insomnia",
+      "Helmet",
+      "Cors",
+    ],
   },
   {
     id: "Tools",
-    desc:
-      "at erat pellentesque adipiscing commodo. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Nibhtellus molestie nunc non. Euismod lacinia at quis risus sedvulputate odio ut enim. Tellus elementum sagittis vitae etleo. Justo eget magna fermentum iaculis eu non diam. Feliseget velit aliquet sagittis id consectetur purus ut faucibus.Mollis aliquam ut porttitor leo a diam sollicitudin tempor.Morbi enim nunc faucibus a pellentesque sit amet. Sed viverratellus in hac habitasse",
+    desc: ["Mac", "Windows", "Slack", "Zoom", "Discord"],
+  },
+  {
+    id: "CS",
+    desc: ["Python"],
   },
 ];

@@ -1,22 +1,23 @@
 import React from "react";
+import "./ProjectCard.css";
 import { useHistory } from "react-router-dom";
 
 // SVGs
-import { Expand } from "../utils/index.js";
+import { Expand } from "../../../utils/index.js";
 
 export const ProjectCard = ({ project }) => {
   const { name, img, id } = project;
   const history = useHistory();
 
   const sendToCloserLook = (siteName, projectData) => {
-    history.push(`/${siteName}`, projectData);
+    history.push(`/cl/${siteName}`, projectData);
     window.scroll(0, 0);
   };
 
   return (
     <div className="card-container">
       <div className="card-img-container">
-        <img src={img} className="card-img" />
+        <img src={img} className="card-img" alt="Picture of project" />
       </div>
 
       <div className="card-text-content-container">
