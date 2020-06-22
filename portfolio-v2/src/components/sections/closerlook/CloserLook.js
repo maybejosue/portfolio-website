@@ -8,10 +8,11 @@ import { GoBack, LiveView, SourceCode } from "../../../utils/index.js";
 
 export default function CloserLook(props) {
   const history = useHistory();
+  console.log(history);
+
+  const id = props.match.params.id;
 
   if (!history.location.state) {
-    const id = props.match.params.id;
-
     let filtering = projectData.filter(
       (projects) => parseInt(id) === projects.id
     );
