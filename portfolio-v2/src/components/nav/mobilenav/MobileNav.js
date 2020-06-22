@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 import "./MobileNav.css";
+import { useHistory } from "react-router-dom";
 
 // Image
 import MyPic from "../../../img/professional-pic.png";
@@ -10,6 +11,7 @@ import MyPic from "../../../img/professional-pic.png";
 import Headroom from "react-headroom";
 
 export default function MobileNav(props) {
+  const history = useHistory();
   const [isOpen, setIsOpen] = useState(false);
 
   const scroll = Scroll.animateScroll;
@@ -122,15 +124,9 @@ export default function MobileNav(props) {
               >
                 Projects
               </Link>
-              <Link
-                smooth
-                duration={850}
-                to="resume"
-                className="anchors"
-                onClick={close}
-              >
+              <div className="anchors" onClick={() => history.push("/resume")}>
                 Resume
-              </Link>
+              </div>
             </div>
             <div className="mobile-contact-container">
               <Link
