@@ -131,22 +131,14 @@ export default function MobileNav(props) {
               >
                 Resume
               </Link>
-              <Link
-                smooth
-                duration={850}
-                to="social"
-                className="anchors"
-                onClick={close}
-              >
-                Social
-              </Link>
             </div>
             <div className="mobile-contact-container">
               <Link
                 smooth
                 duration={850}
-                to="contact"
+                to="social"
                 className="mobile-contact-anchor"
+                onClick={close}
               >
                 Contact
               </Link>

@@ -40,13 +40,10 @@ export default function Nav() {
             <Link smooth duration={850} to="resume" className="nav-anchor">
               Resume
             </Link>
-            <Link smooth duration={850} to="social" className="nav-anchor">
-              Social
-            </Link>
           </div>
         </div>
         <div className="nav-contact">
-          <Link smooth duration={850} to="contact">
+          <Link smooth duration={850} to="social">
             Contact
           </Link>
         </div>
