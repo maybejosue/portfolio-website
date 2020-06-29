@@ -15,6 +15,7 @@ export default function Social() {
         <a
           href="https://www.linkedin.com/in/josue-rodriguez-e90210"
           target="_blank"
+          rel="noopener noreferrer"
           className="social-card-container"
         >
           <div className="social-img-container linkedin">
@@ -30,6 +31,7 @@ export default function Social() {
           className="social-card-container"
           href="https://github.com/JosueRodriguez-webdev"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="social-img-container github">
             <img src={github} alt="Github logo" />
@@ -43,6 +45,7 @@ export default function Social() {
           href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=DmwnWrRsqQCRHtCkcJQnVKLFJxgKXMnpKjTvNZVkjBGfHsxQdqXNrLDGnRvCntHKbRmcttBRRScG"
           target="_blank"
           className="social-card-container"
+          rel="noopener noreferrer"
         >
           <div className="social-img-container email">
             <img src={email} alt="Email / Gmail logo" />

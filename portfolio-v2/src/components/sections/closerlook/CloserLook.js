@@ -8,10 +8,11 @@ import { GoBack, LiveView, SourceCode } from "../../../utils/index.js";
 
 export default function CloserLook(props) {
   const history = useHistory();
+  console.log(history);
+
+  const id = props.match.params.id;
 
   if (!history.location.state) {
-    const id = props.match.params.id;
-
     let filtering = projectData.filter(
       (projects) => parseInt(id) === projects.id
     );
@@ -28,21 +29,28 @@ export default function CloserLook(props) {
     <section id="closerLook">
       <div>
         <div>
-          <div className="go-back" onClick={() => history.goBack()}>
+          <div
+            title="Go Back"
+            className="go-back"
+            onClick={() => history.goBack()}
+          >
             <GoBack />
             Go Back
           </div>
         </div>
         <div className="cl-content">
           <div className="content-img-container">
-            <img
-              className="content-img"
-              src={shorten.img}
-              alt="Picture of project"
-            />
+            <img className="content-img" src={shorten.img} alt="project" />
           </div>
           <div className="content-text">
-            <h3>{shorten.name}</h3>
+            <a
+              href={shorten.liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Live View"
+            >
+              <h3>{shorten.name}</h3>
+            </a>
             <div className="content-info">
               <p className="app-desc">
                 <span className="cl-span">App Description:</span>
@@ -74,12 +82,22 @@ export default function CloserLook(props) {
               </p>
             </div>
             <div className="btn-links">
-              <div>
+              <a
+                href={shorten.liveSite}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Live View"
+              >
                 <LiveView />
-              </div>
-              <div>
+              </a>
+              <a
+                href={shorten.githubRepoToLive}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Source Code"
+              >
                 <SourceCode />
-              </div>
+              </a>
             </div>
           </div>
         </div>

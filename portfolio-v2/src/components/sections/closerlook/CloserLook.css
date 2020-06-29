@@ -52,7 +52,7 @@
 }
 
 .content-text {
-  color: white;
+  color: #f8f6f5;
 }
 
 @media (min-width: 850px) {
@@ -65,6 +65,11 @@
   font-size: 2.5rem;
   margin-bottom: 15%;
   text-align: center;
+  color: #f8f6f5;
+}
+
+.content-text h3:hover {
+  color: #0cce99;
 }
 
 @media (min-width: 650px) {
@@ -133,7 +138,7 @@ li {
   justify-content: space-around;
 }
 
-.btn-links div {
+.btn-links a {
   border-radius: 10px;
   background-color: #0cce99;
   display: flex;
@@ -144,7 +149,7 @@ li {
   cursor: pointer;
 }
 
-.btn-links div:hover {
+.btn-links a:hover {
   background: #0bf0b3;
 }
 /* == CloserLook End == */

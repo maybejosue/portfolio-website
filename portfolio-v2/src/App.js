@@ -11,6 +11,7 @@ import Skill from "./components/sections/skill/Skill.js";
 import ProjectList from "./components/sections/projects/ProjectList.js";
 import Social from "./components/sections/social/Social.js";
 import CloserLook from "./components/sections/closerlook/CloserLook.js";
+import Resume from "./components/sections/resume/Resume.js";
 
 function App() {
   const [closeNav, setCloseNav] = useState(true);
@@ -32,7 +33,8 @@ function App() {
             </div>
           </div>
         </Route>
-        <Route path="/:id" component={CloserLook}></Route>
+        <Route path="/cl/:id" component={CloserLook} />
+        <Route path="/resume" component={Resume} />
       </Switch>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 import "./MobileNav.css";
+import { useHistory } from "react-router-dom";
 
 // Image
 import MyPic from "../../../img/professional-pic.png";
@@ -10,6 +11,7 @@ import MyPic from "../../../img/professional-pic.png";
 import Headroom from "react-headroom";
 
 export default function MobileNav(props) {
+  const history = useHistory();
   const [isOpen, setIsOpen] = useState(false);
 
   const scroll = Scroll.animateScroll;
@@ -60,11 +62,7 @@ export default function MobileNav(props) {
 
               <div className="img-container">
                 <Link smooth duration={850} onClick={goTop}>
-                  <img
-                    className="img"
-                    src={MyPic}
-                    alt="Professional picture of Josue Rodriguez"
-                  />
+                  <img className="img" src={MyPic} alt="Josue Rodriguez" />
                 </Link>
               </div>
             </div>
@@ -92,11 +90,7 @@ export default function MobileNav(props) {
             </div>
             <div className="img-container-open">
               <Link smooth duration={850} onClick={goTop}>
-                <img
-                  className="img-open"
-                  src={MyPic}
-                  alt="Professional picture of Josue Rodriguez"
-                />
+                <img className="img-open" src={MyPic} alt="Josue Rodriguez" />
               </Link>
             </div>
             <div>
@@ -130,31 +124,17 @@ export default function MobileNav(props) {
               >
                 Projects
               </Link>
-              <Link
-                smooth
-                duration={850}
-                to="resume"
-                className="anchors"
-                onClick={close}
-              >
+              <div className="anchors" onClick={() => history.push("/resume")}>
                 Resume
-              </Link>
-              <Link
-                smooth
-                duration={850}
-                to="social"
-                className="anchors"
-                onClick={close}
-              >
-                Social
-              </Link>
+              </div>
             </div>
             <div className="mobile-contact-container">
               <Link
                 smooth
                 duration={850}
-                to="contact"
+                to="social"
                 className="mobile-contact-anchor"
+                onClick={close}
               >
                 Contact
               </Link>

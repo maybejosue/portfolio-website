@@ -17,7 +17,7 @@ export const ProjectCard = ({ project }) => {
   return (
     <div className="card-container">
       <div className="card-img-container">
-        <img src={img} className="card-img" alt="Picture of project" />
+        <img src={img} className="card-img" alt="project" />
       </div>
 
       <div className="card-text-content-container">
@@ -26,6 +26,7 @@ export const ProjectCard = ({ project }) => {
 
           <div
             className="card-btn"
+            title="More info - Expand"
             onClick={() => {
               sendToCloserLook(id, project);
             }}

@@ -5,6 +5,13 @@
   padding-top: 15%;
 }
 
+@media (min-width: 1200px) {
+  .skill-section-container {
+    margin-top: 10%;
+    padding-top: 5%;
+  }
+}
+
 .graph-container {
   height: 400px;
   margin: 5%;

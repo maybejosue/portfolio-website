@@ -15,7 +15,7 @@ export default function Aboutme() {
             <img
               src={fillerpic}
               className="about-me-img"
-              alt="Personal picture of Josue Rodriguez"
+              alt="Josue Rodriguez"
             />
           </div>
           <div className="about-me-paragraph-container">
