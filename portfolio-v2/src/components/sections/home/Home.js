@@ -37,7 +37,11 @@ export default function Home(props) {
           </div>
         </div>
         <div className="gif-container">
-          <img src={gif} className="gif" alt="Images of Projects GIF" />
+          <img
+            src={gif}
+            className="gif"
+            alt="Cycling GIF through previous projects"
+          />
         </div>
       </div>
     </section>
