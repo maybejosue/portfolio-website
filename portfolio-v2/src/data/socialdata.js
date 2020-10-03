@@ -22,8 +22,7 @@ export const socialdata = [
   },
   {
     id: 3,
-    link:
-      "https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=DmwnWrRsqQCRHtCkcJQnVKLFJxgKXMnpKjTvNZVkjBGfHsxQdqXNrLDGnRvCntHKbRmcttBRRScG",
+    link: "https://mail.google.com/mail/#inbox?compose=new",
     color: "#b23121",
     heading: "Email",
     subHeading: "maybejosue@gmail.com",

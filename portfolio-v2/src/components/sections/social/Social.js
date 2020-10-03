@@ -1,11 +1,6 @@
 import React from "react";
 import "./Social.css";
 
-//logo images
-import linkedin from "../../../img/linkedin-logo-x2.png";
-import github from "../../../img/github-logo-x2.png";
-import email from "../../../img/email-communication-x2.png";
-
 // social data
 import { socialdata } from "../../../data/socialdata.js";
 
