@@ -7,7 +7,6 @@ import Nav from "./components/nav/desktopnav/Nav.js";
 import MobileNav from "./components/nav/mobilenav/MobileNav.js";
 import Home from "./components/sections/home/Home.js";
 import Aboutme from "./components/sections/aboutme/Aboutme.js";
-import Skill from "./components/sections/skill/Skill.js";
 import ProjectList from "./components/sections/projects/ProjectList.js";
 import Social from "./components/sections/social/Social.js";
 import CloserLook from "./components/sections/closerlook/CloserLook.js";
@@ -27,7 +26,6 @@ function App() {
             <div onClick={() => setCloseNav(true)}>
               <Home />
               <Aboutme />
-              <Skill />
               <ProjectList />
               <Social />
             </div>
