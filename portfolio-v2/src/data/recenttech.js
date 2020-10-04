@@ -1,8 +1,8 @@
 export const recenttech = [
   "Python",
   "React",
-  "Node",
+  "Node.js",
   "JavaScript",
   "Jest",
-  "React Testing Library",
+  "HTML & CSS",
 ];
