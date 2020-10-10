@@ -7,7 +7,7 @@
   padding-top: 15%;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 750px) {
   .about-me-container {
     margin-top: 5%;
     padding-top: 10%;
@@ -38,7 +38,7 @@
   flex-direction: column-reverse;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 750px) {
   .about-me-content-container {
     display: flex;
     flex-direction: row-reverse;
@@ -49,22 +49,15 @@
 /* img container */
 .about-me-img-container {
   margin: 0 auto;
-  width: 320px;
-  padding-top: 5%;
+  width: 400px;
+  padding: 5%;
 }
 
-@media (min-width: 650px) {
-  .about-me-img-container {
-    width: 400px;
-    padding-top: 0;
-  }
-}
-
-@media (min-width: 850px) {
+@media (min-width: 750px) {
   .about-me-img-container {
     width: 1500px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -75,11 +68,10 @@
 
 /* about me paragraph container */
 .about-me-paragraph-container {
-  margin: 5px;
-  padding: 30px;
+  padding: 0 30px;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 750px) {
   .about-me-paragraph-container {
     margin: 0;
     color: #f8f6f5;
@@ -94,10 +86,10 @@
 
 /* recent technology container */
 .technologies {
-  padding: 30px;
+  padding: 0 30px;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 750px) {
   .technologies {
     padding: 2%;
   }
