@@ -28,7 +28,7 @@ export default function Aboutme() {
                 <br />
                 My professional career
                 started when I dropped out of college to attend{" "}
-                <span href="https://lambdaschool.com/about">Lambda School</span>
+                <a href="https://lambdaschool.com/about" target="_blank">Lambda School</a>
                 , a 9+ month computer science and software engineering program that provides an immersive hands-on curriculum with a focus on computer science, and full-stack web development.
                 <br />
                 <br />
@@ -36,7 +36,7 @@ export default function Aboutme() {
         
                 <br />
                 <br />
-                That being said, my goal right now is to find an awesome developer-team that I can call my second family!
+                My goal right now is to find an awesome engineering-team that I can call my second family!
                 <br />
                 <br />
               </p>
