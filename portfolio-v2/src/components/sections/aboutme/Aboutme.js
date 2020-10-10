@@ -23,30 +23,22 @@ export default function Aboutme() {
           <div>
             <div className="about-me-paragraph-container">
               <p>
-                Hey, my name is Josue Rodriguez and my professional career
+                Hey! I'm Josue Rodriguez, a software engineer based in Hemet, CA.
+                <br />
+                <br />
+                My professional career
                 started when I dropped out of college to attend{" "}
                 <span href="https://lambdaschool.com/about">Lambda School</span>
-                , a coding boot camp for Full Stack Web Development and Data
-                Science.
+                , a 9+ month computer science and software engineering program that provides an immersive hands-on curriculum with a focus on computer science, and full-stack web development.
                 <br />
                 <br />
-                Over the past year, I’ve studied intensively on a remote team
-                building real products with other engineers, sharpening my
-                skills to understand, plan, execute, reflect but most
-                importantly think like a Developer -- producing creative ideas
-                and solutions to solve programming problems.
+                As for myself, I really enjoy watching anime, reading manga, struggling through leetcode challenges, and immersing myself in the sneaker-twitter community (sneaker drops).
+        
                 <br />
                 <br />
-                As for myself, I've been selling vintage and brand-name men's
-                clothing, hard-to-find sneakers, and accessories as a side
-                hustle / hobby for a couple of years now. I also enjoy watching
-                anime, reading manga, and one day hope to visit Japan with my
-                older brother. Ultimately, however, I would love to join a
-                friendly developer team to consider a second family.
+                That being said, my goal right now is to find an awesome developer-team that I can call my second family!
                 <br />
                 <br />
-                All in all, my mission is to excel in everything I put my mind
-                too!
               </p>
             </div>
             <div className="technologies">
