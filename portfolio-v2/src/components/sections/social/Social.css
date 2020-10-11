@@ -1,9 +1,11 @@
 /* == Social == */
 
+/* social container */
 .social-container {
   margin-top: 20%;
 }
 
+/* social card container */
 .social-card-container {
   display: flex;
   background-color: #1f2436;
@@ -12,6 +14,10 @@
   border-radius: 5px;
   align-items: center;
   margin-bottom: 25px;
+}
+
+.social-card-container:hover {
+  background: #2e3652;
 }
 
 @media (min-width: 600px) {
@@ -27,6 +33,7 @@
   }
 }
 
+/* social img container */
 .social-img-container {
   height: 90px;
   display: flex;
@@ -42,14 +49,11 @@
   }
 }
 
+/* social text content container */
 .social-text-content-container {
   margin-left: 25px;
   height: 90px;
   width: 100%;
-}
-
-.social-card-container:hover {
-  background: #2e3652;
 }
 
 .social-text-content-container h6 {
