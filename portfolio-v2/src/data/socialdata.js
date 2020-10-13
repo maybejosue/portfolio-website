@@ -9,7 +9,7 @@ export const socialdata = [
     link: "https://www.linkedin.com/in/maybejosue/",
     color: "#0e76a8",
     heading: "Linkedin",
-    subHeading: "https://www.linkedin.com/in/maybejosue/",
+    subHeading: "linkedin.com/in/maybejosue/",
     iconImg: linkedin,
   },
   {
@@ -17,7 +17,7 @@ export const socialdata = [
     link: "https://github.com/maybejosue",
     color: "#333",
     heading: "Github",
-    subHeading: "https://github.com/maybejosue",
+    subHeading: "github.com/maybejosue",
     iconImg: github,
   },
   {
@@ -33,7 +33,7 @@ export const socialdata = [
     link: "https://leetcode.com/maybejosue/",
     color: "#f7aa00",
     heading: "LeetCode",
-    subHeading: "https://leetcode.com/maybejosue/",
+    subHeading: "leetcode.com/maybejosue/",
     iconImg: leetcode,
   },
 ];

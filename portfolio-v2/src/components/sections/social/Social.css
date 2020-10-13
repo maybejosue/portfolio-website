@@ -1,9 +1,15 @@
 /* == Social == */
 
+/* social container */
 .social-container {
   margin-top: 20%;
 }
 
+.box {
+  margin-bottom: 25px;
+}
+
+/* social card container */
 .social-card-container {
   display: flex;
   background-color: #1f2436;
@@ -14,19 +20,21 @@
   margin-bottom: 25px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
+  .box {
+    display: flex;
+    flex-flow: row wrap;
+  }
   .social-card-container {
-    width: 500px;
+    width: 45%;
   }
 }
 
-@media (min-width: 900px) {
-  .social-card-container {
-    width: 650px;
-    height: 100px;
-  }
+.social-card-container:hover {
+  background: #2e3652;
 }
 
+/* social img container */
 .social-img-container {
   height: 90px;
   display: flex;
@@ -36,32 +44,17 @@
   width: 65px;
 }
 
-@media (min-width: 900px) {
-  .social-img-container {
-    height: 100px;
-  }
-}
-
+/* social text content container */
 .social-text-content-container {
   margin-left: 25px;
   height: 90px;
   width: 100%;
 }
 
-.social-card-container:hover {
-  background: #2e3652;
-}
-
 .social-text-content-container h6 {
   font-size: 1.8rem;
   margin: 10px 0 5px 0;
   color: #f8f6f5;
-}
-
-@media (min-width: 1200px) {
-  .social-text-content-container h6 {
-    font-size: 2.1rem;
-  }
 }
 
 .social-text-content-container p {
@@ -71,8 +64,8 @@
 }
 
 @media (min-width: 1200px) {
-  .social-text-content-container p {
-    font-size: 1.8rem;
+  .social-text-content-container h6 {
+    font-size: 2.1rem;
   }
 }
 
