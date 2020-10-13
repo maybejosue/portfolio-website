@@ -33,21 +33,18 @@ export default function Nav() {
             <Link smooth duration={850} to="aboutme" className="nav-anchor">
               About
             </Link>
-            <Link smooth duration={850} to="skills" className="nav-anchor">
-              Skills
-            </Link>
             <Link smooth duration={850} to="projects" className="nav-anchor">
               Projects
             </Link>
-            <div className="nav-anchor" onClick={() => history.push("/resume")}>
-              Resume
+            <div className="nav-anchor" >
+            <Link smooth duration={850} to="social">
+            Contact
+          </Link>
             </div>
           </div>
         </div>
-        <div className="nav-contact">
-          <Link smooth duration={850} to="social">
-            Contact
-          </Link>
+        <div className="nav-contact" onClick={() => history.push("/resume")}>
+          Resume
         </div>
       </div>
     </Headroom>
