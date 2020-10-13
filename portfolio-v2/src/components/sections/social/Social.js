@@ -8,8 +8,9 @@ export default function Social() {
   return (
     <section id="social">
       <div className="social-container">
+        
         <h5 className="section-heading">Social Media</h5>
-
+        <div className='box'>
         {socialdata.map((data) => (
           <a
             key={data.id}
@@ -30,6 +31,7 @@ export default function Social() {
             </div>
           </a>
         ))}
+        </div>
       </div>
     </section>
   );
