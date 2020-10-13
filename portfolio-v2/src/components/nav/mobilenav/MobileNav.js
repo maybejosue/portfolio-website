@@ -109,26 +109,13 @@ export default function MobileNav(props) {
               <Link
                 smooth
                 duration={850}
-                to="skills"
-                className="anchors"
-                onClick={close}
-              >
-                Skills
-              </Link>
-              <Link
-                smooth
-                duration={850}
                 to="projects"
                 className="anchors"
                 onClick={close}
               >
                 Projects
               </Link>
-              <div className="anchors" onClick={() => history.push("/resume")}>
-                Resume
-              </div>
-            </div>
-            <div className="mobile-contact-container">
+              <div className="anchors" >
               <Link
                 smooth
                 duration={850}
@@ -138,6 +125,10 @@ export default function MobileNav(props) {
               >
                 Contact
               </Link>
+              </div>
+            </div>
+            <div className="mobile-contact-container" onClick={() => history.push("/resume")}>
+              Resume
             </div>
           </div>
         </div>
