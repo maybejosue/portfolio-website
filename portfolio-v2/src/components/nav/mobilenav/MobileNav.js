@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 import "./MobileNav.css";
 import { useHistory } from "react-router-dom";
@@ -19,7 +18,6 @@ const history = useHistory();
 const [isOpen, setIsOpen] = useState(false);
 
 
-const scroll = Scroll.animateScroll;
 function open() {
 if (window.matchMedia("(min-width: 600px)").matches) {
     document.getElementById("sidebar-menu").style.width = "50%";

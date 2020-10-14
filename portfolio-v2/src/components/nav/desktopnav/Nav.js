@@ -1,5 +1,4 @@
 import React from "react";
-import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 import "./Nav.css";
 import { useHistory } from "react-router-dom";
@@ -15,7 +14,7 @@ import {navdata} from '../../../data/navdata.js'
 
 export default function Nav() {
   const history = useHistory();
-  
+
   return (
     <Headroom>
       <div id="home" id="nav">
