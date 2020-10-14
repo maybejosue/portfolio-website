@@ -10,13 +10,14 @@ import MyPic from "../../../img/professional-pic.png";
 //react headroom
 import Headroom from "react-headroom";
 
-// nav data
+// data structure for nav tabs
 import {navdata} from '../../../data/navdata.js'
 
 export default function MobileNav(props) {
 const history = useHistory();
 
 const [isOpen, setIsOpen] = useState(false);
+
 
 const scroll = Scroll.animateScroll;
 function open() {
@@ -34,10 +35,6 @@ function close() {
   setIsOpen(false);
 }
 
-function goTop() {
-  scroll.scrollToTop();
-  close();
-}
 
   const importance = navdata[navdata.length -1]
 
@@ -66,7 +63,7 @@ function goTop() {
               </div>
 
               <div className="img-container">
-                <Link smooth duration={850} onClick={goTop}>
+                <Link smooth duration={850} to='home'>
                   <img className="img" src={MyPic} alt="Josue Rodriguez" />
                 </Link>
               </div>
@@ -95,11 +92,11 @@ function goTop() {
             </div>
             
             <div className="img-container-open">
-              <Link smooth duration={850} onClick={goTop}>
+              <Link smooth duration={850} to='home'>
                 <img className="img-open" src={MyPic} alt="Josue Rodriguez" />
               </Link>
             </div>
-            
+            {/* maps thru navdata data structure in order to display all basic tabs to mobile nav bar */}
             <div>
               {navdata.map((data)=>(( <Link
                 smooth
