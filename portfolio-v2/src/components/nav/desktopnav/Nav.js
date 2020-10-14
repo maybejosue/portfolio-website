@@ -10,6 +10,8 @@ import MyPic from "../../../img/professional-pic.png";
 //react headroom
 import Headroom from "react-headroom";
 
+import {navdata} from '../../../data/navdata.js'
+
 export default function Nav() {
   const history = useHistory();
   const scroll = Scroll.animateScroll;
@@ -27,20 +29,12 @@ export default function Nav() {
             </Link>
           </div>
           <div className="nav-links">
-            <Link smooth duration={850} onClick={goTop} className="nav-anchor">
-              Home
+            {navdata.map((data)=>(
+              <Link key={data.id} smooth duration={850} to={data.goingTo} className="nav-anchor">
+              {data.sectionHeading}
             </Link>
-            <Link smooth duration={850} to="aboutme" className="nav-anchor">
-              About
-            </Link>
-            <Link smooth duration={850} to="projects" className="nav-anchor">
-              Projects
-            </Link>
-            <div className="nav-anchor" >
-            <Link smooth duration={850} to="social">
-            Contact
-          </Link>
-            </div>
+  ))}
+            
           </div>
         </div>
         <div className="nav-contact" onClick={() => history.push("/resume")}>
