@@ -10,31 +10,36 @@ import MyPic from "../../../img/professional-pic.png";
 //react headroom
 import Headroom from "react-headroom";
 
+// nav data
+import {navdata} from '../../../data/navdata.js'
+
 export default function MobileNav(props) {
-  const history = useHistory();
-  const [isOpen, setIsOpen] = useState(false);
+const history = useHistory();
 
-  const scroll = Scroll.animateScroll;
+const [isOpen, setIsOpen] = useState(false);
 
-  function open() {
-    if (window.matchMedia("(min-width: 600px)").matches) {
-      document.getElementById("sidebar-menu").style.width = "50%";
-      setIsOpen(true);
-    } else {
-      document.getElementById("sidebar-menu").style.width = "60%";
-      setIsOpen(true);
-    }
+const scroll = Scroll.animateScroll;
+function open() {
+if (window.matchMedia("(min-width: 600px)").matches) {
+    document.getElementById("sidebar-menu").style.width = "50%";
+    setIsOpen(true);
+  } else {
+    document.getElementById("sidebar-menu").style.width = "60%";
+    setIsOpen(true);
   }
+}
 
-  function close() {
-    document.getElementById("sidebar-menu").style.width = "0";
-    setIsOpen(false);
-  }
+function close() {
+  document.getElementById("sidebar-menu").style.width = "0";
+  setIsOpen(false);
+}
 
-  function goTop() {
-    scroll.scrollToTop();
-    close();
-  }
+function goTop() {
+  scroll.scrollToTop();
+  close();
+}
+
+  const importance = navdata[navdata.length -1]
 
   return (
     <section id="home" id="mobileNav">
@@ -88,48 +93,32 @@ export default function MobileNav(props) {
                 />
               </svg>
             </div>
+            
             <div className="img-container-open">
               <Link smooth duration={850} onClick={goTop}>
                 <img className="img-open" src={MyPic} alt="Josue Rodriguez" />
               </Link>
             </div>
+            
             <div>
-              <Link smooth duration={850} className="anchors" onClick={goTop}>
-                Home
-              </Link>
-              <Link
+              {navdata.map((data)=>(( <Link
                 smooth
                 duration={850}
-                to="aboutme"
+                to={data.goingTo}
                 className="anchors"
                 onClick={close}
+                key={data.id}
               >
-                About
-              </Link>
-              <Link
-                smooth
-                duration={850}
-                to="projects"
-                className="anchors"
-                onClick={close}
-              >
-                Projects
-              </Link>
-              <div className="anchors" >
-              <Link
-                smooth
-                duration={850}
-                to="social"
-                className="mobile-contact-anchor"
-                onClick={close}
-              >
-                Contact
-              </Link>
-              </div>
+                {data.sectionHeading}
+              </Link>)
+                
+              ))}
             </div>
-            <div className="mobile-contact-container" onClick={() => history.push("/resume")}>
+
+            <div className="mobile-contact-container" onClick={() => history.push('/resume')}>
               Resume
             </div>
+
           </div>
         </div>
       </nav>
