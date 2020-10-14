@@ -16,6 +16,7 @@ function App() {
   const [closeNav, setCloseNav] = useState(true);
 
   return (
+    <section id='home'>
     <div className="App">
       <Switch>
         <Route exact path="/">
@@ -35,6 +36,7 @@ function App() {
         <Route path="/resume" component={Resume} />
       </Switch>
     </div>
+    </section>
   );
 }
 
