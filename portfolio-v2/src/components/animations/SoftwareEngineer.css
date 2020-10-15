@@ -18,10 +18,13 @@
   }
 }
 
+.engineer-text {
+  padding-left: 8px;
+}
+
 .software-text,
 .engineer-text {
   display: flex;
-  padding-left: 8px;
   text-align: center;
   margin: 0 auto;
 }
