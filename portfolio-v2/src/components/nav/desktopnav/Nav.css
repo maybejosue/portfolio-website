@@ -1,7 +1,7 @@
 /* == Nav == */
 
 #nav {
-  margin-top: 2%;
+  padding: 2%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

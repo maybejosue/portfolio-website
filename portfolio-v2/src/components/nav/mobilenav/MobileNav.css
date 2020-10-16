@@ -10,7 +10,7 @@
 
 .closed-nav-container {
   display: flex;
-  margin-top: 2%;
+  padding: 2%;
   justify-content: center;
 }
 
