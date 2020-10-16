@@ -6,17 +6,33 @@ import { useHistory } from "react-router-dom";
 // Image
 import MyPic from "../../../img/professional-pic.png";
 
-//react headroom
-import Headroom from "react-headroom";
-
 // data structure for nav tabs
 import {navdata} from '../../../data/navdata.js'
 
 export default function Nav() {
   const history = useHistory();
 
+  // displays navbar when user scrolls up / removes navbar when user scrolls down
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var nav = document.querySelector(".headroom")
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      
+      nav.classList.add('headroom--pinned')
+      nav.classList.remove('headroom--unpinned')
+
+    } else {
+      nav.classList.add('headroom--unpinned')
+      nav.classList.remove('headroom--pinned')
+      
+    }
+    console.log(nav)
+    prevScrollpos = currentScrollPos;
+  } 
+
   return (
-    <Headroom>
+    <div className='headroom'>
       <div id="home" id="nav">
         <div className="nav-normal-link-container">
           <div className="nav-img-container">
@@ -37,6 +53,6 @@ export default function Nav() {
           Resume
         </div>
       </div>
-    </Headroom>
+    </div>
   );
 }
