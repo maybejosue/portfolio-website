@@ -2,7 +2,6 @@
 var prevScrollpos = window.pageYOffset;
 export const Headroom = () => {
   var nav = document.querySelector('.headroom')
-  console.log(nav)
   var currentScrollPos = window.pageYOffset;
   if (nav != null){
   if (prevScrollpos > currentScrollPos) {
@@ -18,6 +17,5 @@ export const Headroom = () => {
 }
 
 
-  console.log(nav)
   prevScrollpos = currentScrollPos;
 }
