@@ -13,24 +13,6 @@ export default function MobileNav(props) {
 const history = useHistory();
 const [isOpen, setIsOpen] = useState(false);
 
-var prevScrollpos = window.pageYOffset;
- window.onscroll = function() {
-    var nav = document.querySelector('.hey')
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      
-      nav.classList.add('headroom--pinned')
-      nav.classList.remove('headroom--unpinned')
-
-    } else {
-      nav.classList.add('headroom--unpinned')
-      nav.classList.remove('headroom--pinned')
-      
-    }
-    console.log(nav)
-    prevScrollpos = currentScrollPos;
-  }
-
 
 function open() {
 if (window.matchMedia("(min-width: 600px)").matches) {
@@ -54,7 +36,7 @@ function close() {
     <section id="home" id="mobileNav">
       <nav>
         <div className="mobile-nav-container">
-          <div className='hey'>
+          <div className='headroom'>
             <div className="closed-nav-container">
               <div className="svg-container">
                 <svg

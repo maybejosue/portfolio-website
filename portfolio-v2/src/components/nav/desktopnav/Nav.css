@@ -1,24 +1,5 @@
 /* == Nav == */
 
-.headroom {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-
-.headroom--pinned {
-  position: fixed;
-  top: 0;
-  transition: top 300ms linear;
-}
-
-.headroom--unpinned {
-  position: fixed;
-  top: -150px;
-  transition: top 300ms linear;
-}
-
 #nav {
   padding: 2%;
   display: flex;
