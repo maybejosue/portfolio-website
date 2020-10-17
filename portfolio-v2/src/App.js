@@ -14,6 +14,13 @@ import Resume from "./components/sections/resume/Resume.js";
 
 function App() {
   const [closeNav, setCloseNav] = useState(true);
+  const [mobileNav, setMobileNav] = useState(window.addEventListener('resize', () => {
+    var newWidth = window.innerWidth
+    setMobileNav(newWidth)
+  }))
+
+
+
 
   return (
     <section id='home'>
@@ -21,8 +28,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <div>
-            <Nav />
-            <MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />
+          {mobileNav > 850 ? (<Nav />):(<MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />)}
+             {/* <Nav />
+             <MobileNav closeNav={closeNav} setCloseNav={setCloseNav} /> */}
 
             <div onClick={() => setCloseNav(true)}>
               <Home />

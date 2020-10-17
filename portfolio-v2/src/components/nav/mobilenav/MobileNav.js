@@ -6,16 +6,30 @@ import { useHistory } from "react-router-dom";
 // Image
 import MyPic from "../../../img/professional-pic.png";
 
-//react headroom
-import Headroom from "react-headroom";
-
 // data structure for nav tabs
 import {navdata} from '../../../data/navdata.js'
 
 export default function MobileNav(props) {
 const history = useHistory();
-
 const [isOpen, setIsOpen] = useState(false);
+
+var prevScrollpos = window.pageYOffset;
+ window.onscroll = function() {
+    var nav = document.querySelector('.hey')
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      
+      nav.classList.add('headroom--pinned')
+      nav.classList.remove('headroom--unpinned')
+
+    } else {
+      nav.classList.add('headroom--unpinned')
+      nav.classList.remove('headroom--pinned')
+      
+    }
+    console.log(nav)
+    prevScrollpos = currentScrollPos;
+  }
 
 
 function open() {
@@ -40,7 +54,7 @@ function close() {
     <section id="home" id="mobileNav">
       <nav>
         <div className="mobile-nav-container">
-          <Headroom>
+          <div className='hey'>
             <div className="closed-nav-container">
               <div className="svg-container">
                 <svg
@@ -66,7 +80,9 @@ function close() {
                 </Link>
               </div>
             </div>
-          </Headroom>
+            </div>
+            
+          
 
           <div
             id="sidebar-menu"

@@ -12,10 +12,9 @@ import {navdata} from '../../../data/navdata.js'
 export default function Nav() {
   const history = useHistory();
 
-  // displays navbar when user scrolls up / removes navbar when user scrolls down
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
-    var nav = document.querySelector(".headroom")
+    var nav = document.querySelector('.headroom')
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       
@@ -29,7 +28,9 @@ export default function Nav() {
     }
     console.log(nav)
     prevScrollpos = currentScrollPos;
-  } 
+  }
+
+  // displays navbar when user scrolls up / removes navbar when user scrolls down
 
   return (
     <div className='headroom'>
