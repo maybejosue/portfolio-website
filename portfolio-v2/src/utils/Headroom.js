@@ -5,17 +5,12 @@ export const Headroom = () => {
   var currentScrollPos = window.pageYOffset;
   console.log(currentScrollPos, prevScrollpos)
   if (nav != null){
-    if (currentScrollPos == 0){
-      nav.classList.remove('headroom--pinned')
-    } else if(prevScrollpos > currentScrollPos) {
-    
-    nav.classList.add('headroom--pinned')
-    nav.classList.remove('headroom--unpinned')
-  } else {
-    nav.classList.add('headroom--unpinned')
-    nav.classList.remove('headroom--pinned')
-    
-  }
+
+    if (prevScrollpos > currentScrollPos) {
+      nav.style.top = "0";
+    } else {
+      nav.style.top = "-150px";
+    }
 }
 
 
