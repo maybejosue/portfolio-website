@@ -8,7 +8,6 @@ import { GoBack, LiveView, SourceCode } from "../../../utils/index.js";
 
 export default function CloserLook(props) {
   const history = useHistory();
-  console.log(history);
 
   const id = props.match.params.id;
 

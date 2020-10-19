@@ -6,9 +6,6 @@ import { useHistory } from "react-router-dom";
 // Image
 import MyPic from "../../../img/professional-pic.png";
 
-//react headroom
-import Headroom from "react-headroom";
-
 // data structure for nav tabs
 import {navdata} from '../../../data/navdata.js'
 
@@ -16,7 +13,7 @@ export default function Nav() {
   const history = useHistory();
 
   return (
-    <Headroom>
+    <div className='headroom'>
       <div id="home" id="nav">
         <div className="nav-normal-link-container">
           <div className="nav-img-container">
@@ -37,6 +34,6 @@ export default function Nav() {
           Resume
         </div>
       </div>
-    </Headroom>
+    </div>
   );
 }

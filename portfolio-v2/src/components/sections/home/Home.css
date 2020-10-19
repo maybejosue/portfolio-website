@@ -1,9 +1,8 @@
 /* == Home == */
 
 .home-container {
-  padding: 40% 0 30% 0;
+  padding: 30% 0 30% 0;
 }
-
 @media (min-width: 850px) {
   .home-container {
     display: flex;
