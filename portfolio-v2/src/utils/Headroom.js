@@ -7,7 +7,7 @@ export const Headroom = () => {
   console.log(currentScrollPos, prevScrollpos, hey)
   if (nav != null){
      console.log(currentScrollPos)
-     if (0 < currentScrollPos & currentScrollPos < 150){
+     if (currentScrollPos < 150){
       nav.style.top = "0";
     } else if (prevScrollpos > currentScrollPos) {
       nav.style.top = "0";
