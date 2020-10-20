@@ -17,3 +17,12 @@ body {
 a {
   text-decoration: none;
 }
+
+.headroom {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 250ms linear;
+}
+

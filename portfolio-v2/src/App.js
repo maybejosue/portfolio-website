@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 
@@ -12,8 +12,22 @@ import Social from "./components/sections/social/Social.js";
 import CloserLook from "./components/sections/closerlook/CloserLook.js";
 import Resume from "./components/sections/resume/Resume.js";
 
+import {Headroom} from './utils/index'
+
 function App() {
   const [closeNav, setCloseNav] = useState(true);
+  const [mobileNav, setMobileNav] = useState(window.innerWidth)
+
+   window.addEventListener('resize', () => {
+  var newWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+   
+  setMobileNav(newWidth)
+})
+
+
+  window.onscroll = Headroom
+
+
 
   return (
     <section id='home'>
@@ -21,8 +35,8 @@ function App() {
       <Switch>
         <Route exact path="/">
           <div>
-            <Nav />
-            <MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />
+            {/* Keeps tabs in window width in order to switch between mobile and desktop navbar */}
+          {mobileNav > 850 ? (<Nav />):(<MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />)}
 
             <div onClick={() => setCloseNav(true)}>
               <Home />
