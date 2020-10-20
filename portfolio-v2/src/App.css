@@ -20,19 +20,9 @@ a {
 
 .headroom {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
+  transition: top 250ms linear;
 }
 
-.headroom--pinned {
-  position: fixed;
-  top: 0;
-  transition: top 300ms linear;
-}
-
-.headroom--unpinned {
-  position: fixed;
-  top: -150px;
-  transition: top 300ms linear;
-}
