@@ -1,13 +1,13 @@
 /* == Home == */
 
 .home-container {
-  padding: 30% 0 30% 0;
+  padding: 50% 0 30% 0;
 }
 @media (min-width: 850px) {
   .home-container {
     display: flex;
     justify-content: space-evenly;
-    padding: 15% 3% 15% 3%;
+    padding: 25% 3% 15% 3%;
   }
 }
 
@@ -15,7 +15,7 @@
   .home-container {
     display: flex;
     justify-content: space-evenly;
-    padding: 15% 0 15% 0;
+    padding: 20% 0 15% 0;
   }
 }
 
