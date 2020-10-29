@@ -7,7 +7,25 @@
   left: 50%;
   margin-top: -300px;
   margin-left: -175px;
-  background: white;
-  padding: 10px;
+  background:  #1b4a79;
+  border: solid 1px #151823;
   border-radius: 10px;
+}
+
+.modal-img-container{
+  
+
+
+}
+
+.modal-img{
+  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-exit-btn{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
 }
