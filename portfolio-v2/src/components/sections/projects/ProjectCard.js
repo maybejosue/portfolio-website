@@ -1,21 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import "./ProjectCard.css";
 import { useHistory } from "react-router-dom";
+import {Modal} from '../../../utils/modal/Modal.js'
 
 // SVGs
 import { Expand } from "../../../utils/index.js";
 
 export const ProjectCard = ({ project }) => {
   const { name, img, id } = project;
-  const history = useHistory();
+  const [modal, setModal] = useState(false)
 
-  const sendToCloserLook = (siteName, projectData) => {
-    history.push(`/cl/${siteName}`, projectData);
-    window.scroll(0, 0);
-  };
+  const toggle = () => {
+    setModal(!modal)
+  }
+  // const history = useHistory();
+
+  // const sendToCloserLook = (siteName, projectData) => {
+  //   history.push(`/cl/${siteName}`, projectData);
+  //   window.scroll(0, 0);
+  // };
 
   return (
-    <div className="card-container">
+    <>
+    <div className="card-container" key={id}>
       <div className="card-img-container">
         <img src={img} className="card-img" alt="project" />
       </div>
@@ -28,7 +35,7 @@ export const ProjectCard = ({ project }) => {
             className="card-btn"
             title="More info - Expand"
             onClick={() => {
-              sendToCloserLook(id, project);
+              toggle()
             }}
           >
             <Expand />
@@ -36,5 +43,7 @@ export const ProjectCard = ({ project }) => {
         </div>
       </div>
     </div>
+    {modal ? (Modal(project)): (null)}
+    </>
   );
 };
