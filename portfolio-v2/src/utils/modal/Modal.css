@@ -1,3 +1,9 @@
+.modal-title,
+.modal-techstack,
+.modal-app-desc {
+  color: #f8f6f5;
+  padding: 1%;
+}
 .modal {
   position: fixed;
   width: 350px;
@@ -49,7 +55,7 @@
 }
 
 .modal-app-desc {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .modal-btn-container {
@@ -65,4 +71,8 @@
   padding: 5px 6px 5px 6px;
   background: #0cce99;
   cursor: pointer;
+}
+
+.modal-mobile-content {
+  padding: 2%;
 }

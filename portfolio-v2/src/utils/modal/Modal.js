@@ -14,20 +14,24 @@ export const Modal = (props) => {
           <div className="modal-img-container">
             <img src={props.project.img} className="modal-img" alt="project" />
           </div>
+          <div className="modal-mobile-content">
+            <h4 className="modal-title">{props.project.name}</h4>
 
-          <h4 className="modal-title">{props.project.name}</h4>
-          <p className="modal-techstack">{props.project.techStack}</p>
+            <p className="modal-app-desc">{props.project.appDesc}</p>
+            <p className="modal-techstack">
+              <span>Tech stack: </span>
 
-          <h5>Description:</h5>
+              {props.project.techStack}
+            </p>
 
-          <p className="modal-app-desc">{props.project.appDesc}</p>
-          <br />
-          <div className="modal-btn-container">
-            <div className="modal-code-info-btn">
-              <SourceCode />
-            </div>
-            <div className="modal-code-info-btn">
-              <LiveView />
+            <br />
+            <div className="modal-btn-container">
+              <div className="modal-code-info-btn">
+                <SourceCode />
+              </div>
+              <div className="modal-code-info-btn">
+                <LiveView />
+              </div>
             </div>
           </div>
         </div>
