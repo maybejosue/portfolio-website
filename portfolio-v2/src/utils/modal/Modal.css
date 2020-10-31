@@ -1,3 +1,7 @@
+/* == Modal == */
+
+/* input class name here*/
+
 .modal-title,
 .modal-techstack,
 .modal-app-desc {
@@ -46,9 +50,18 @@
 }
 
 .modal-exit-btn {
+  width: 35px;
+  border-radius: 20px;
+  right: 5px;
+  top: 5px;
   position: absolute;
-  right: 0;
+  padding: 5px 6px 5px 6px;
+  background: #0cce99;
   cursor: pointer;
+}
+
+.modal-exit-btn:hover {
+  background: #0bf0b3;
 }
 
 .modal-app-desc {
@@ -92,6 +105,10 @@
   margin-bottom: 1%;
 }
 
+.modal-code-info-btn:hover {
+  background: #0bf0b3;
+}
+
 .modal-mobile-content {
   padding: 2%;
 }
@@ -121,3 +138,5 @@
 li {
   padding: 5px 0;
 }
+
+/* == Modal End == */

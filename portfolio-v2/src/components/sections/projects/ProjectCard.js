@@ -13,12 +13,6 @@ export const ProjectCard = ({ project }) => {
   const toggle = () => {
     setModal(!modal);
   };
-  // const history = useHistory();
-
-  // const sendToCloserLook = (siteName, projectData) => {
-  //   history.push(`/cl/${siteName}`, projectData);
-  //   window.scroll(0, 0);
-  // };
 
   return (
     <>
@@ -43,7 +37,7 @@ export const ProjectCard = ({ project }) => {
           </div>
         </div>
       </div>
-      {modal ? <Modal project={project} toggle={toggle}/> : null}
+      {modal ? <Modal project={project} toggle={toggle} /> : null}
     </>
   );
 };
