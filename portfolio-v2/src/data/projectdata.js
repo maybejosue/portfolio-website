@@ -25,7 +25,7 @@ export const projectData = [
       "https://i.postimg.cc/nzfTpHff/Screen-Shot-2020-05-14-at-4-38-33-PM.png",
     name: "Our Community Calendar",
     appDesc:
-      "Residents experience increasing isolation and are frequently unaware of neighborhood and community gatherings in their local area. Municipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distributiMunicipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distributi Municipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distributi ",
+      "Residents experience increasing isolation and are frequently unaware of neighborhood and community gatherings in their local area. Municipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distributiMunicipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distributi Municipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distributi es, communit",
     techStack: "React | AWS | Apollo Client | Apollo Server | GraphQL | Prisma",
     responsibility: [
       "Delivered functoning Web and iOS products built to the stakeholders’ specificatons",
