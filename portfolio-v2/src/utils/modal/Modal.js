@@ -4,6 +4,7 @@ import { Exit, LiveView, SourceCode } from "../index.js";
 
 export const Modal = ({ project, toggle }) => {
   const {
+    id,
     img,
     name,
     appDesc,
@@ -17,6 +18,7 @@ export const Modal = ({ project, toggle }) => {
     <div className="modal-backdrop" onClick={toggle}>
       <div
         className="modal"
+        key={id}
         onClick={(e) => {
           e.stopPropagation();
         }}
