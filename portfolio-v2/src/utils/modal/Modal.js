@@ -14,8 +14,13 @@ export const Modal = ({ project, toggle }) => {
   } = project;
 
   return (
-    <div className="modal-backdrop">
-      <div className="modal">
+    <div className="modal-backdrop" onClick={toggle}>
+      <div
+        className="modal"
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         <div className="modal-exit-btn" onClick={toggle}>
           <Exit />
         </div>
