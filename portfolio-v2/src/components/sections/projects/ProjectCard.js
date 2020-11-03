@@ -1,40 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProjectCard.css";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
+import { Modal } from "../../../utils/modal/Modal.js";
 
 // SVGs
 import { Expand } from "../../../utils/index.js";
 
 export const ProjectCard = ({ project }) => {
   const { name, img, id } = project;
-  const history = useHistory();
+  const [modal, setModal] = useState(false);
 
-  const sendToCloserLook = (siteName, projectData) => {
-    history.push(`/cl/${siteName}`, projectData);
-    window.scroll(0, 0);
+  const stopOverflow = () => {
+    var body = document.getElementsByTagName("body")[0];
+    if (
+      body.getAttribute("style") == null ||
+      body.getAttribute("style") == ""
+    ) {
+      body.style.overflowY = "hidden";
+    } else {
+      body.style.overflowY = "";
+    }
+  };
+
+  const toggle = () => {
+    setModal(!modal);
+    stopOverflow();
   };
 
   return (
-    <div className="card-container">
-      <div className="card-img-container">
-        <img src={img} className="card-img" alt="project" />
-      </div>
+    <>
+      <div className="card-container" key={id}>
+        <div className="card-img-container">
+          <img src={img} className="card-img" alt="project" />
+        </div>
 
-      <div className="card-text-content-container">
-        <div className="card-btn-container">
-          <h6>{name}</h6>
+        <div className="card-text-content-container">
+          <div className="card-btn-container">
+            <h6>{name}</h6>
 
-          <div
-            className="card-btn"
-            title="More info - Expand"
-            onClick={() => {
-              sendToCloserLook(id, project);
-            }}
-          >
-            <Expand />
+            <div
+              className="card-btn"
+              title="More info - Expand"
+              onClick={() => {
+                toggle();
+              }}
+            >
+              <Expand />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      {modal ? <Modal project={project} toggle={toggle} /> : null}
+    </>
   );
 };

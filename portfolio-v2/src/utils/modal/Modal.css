@@ -1,0 +1,166 @@
+/* == Modal == */
+
+/* .modal-backdrop */
+
+.modal-backdrop {
+  overflow-y: scroll;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.466);
+}
+
+/* .modal */
+
+.modal {
+  position: absolute;
+  width: 350px;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -300px;
+  background: #1f2436;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* .modal-exit-btn */
+
+.modal-exit-btn {
+  width: 35px;
+  border-radius: 20px;
+  right: 5px;
+  top: 5px;
+  position: absolute;
+  padding: 5px 6px 5px 6px;
+  background: #0cce99;
+  cursor: pointer;
+}
+
+.modal-exit-btn:hover {
+  background: #0bf0b3;
+}
+
+/* .modal-desktop-content */
+
+.modal-desktop-content {
+  display: flex;
+}
+
+.modal-desktop-content h6 {
+  text-align: center;
+  color: #f8f6f5;
+  margin: 1%;
+}
+
+/* .modal-mobile */
+
+/* .modal-img-container */
+
+/* .modal-img */
+
+.modal-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* .modal-mobile-content */
+
+.modal-mobile-content {
+  padding: 2%;
+}
+
+/* .modal-title */
+
+.modal-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* .modal-app-desc */
+
+.modal-app-desc h6,
+.modal-techstack h6,
+.modal-desktop-content h6 {
+  font-size: 1.8rem;
+}
+
+.modal-app-desc {
+  font-size: 1.8rem;
+}
+
+/* .modal-teckstack */
+
+.modal-techstack {
+  font-size: 1.5rem;
+}
+
+/* .modal-btn-container */
+
+.modal-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .modal-code-info-btn */
+
+.modal-code-info-btn {
+  width: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 6px 5px 6px;
+  background: #0cce99;
+  cursor: pointer;
+  margin-bottom: 1%;
+}
+
+.modal-code-info-btn:hover {
+  background: #0bf0b3;
+}
+
+/* .modal-responsibilities-content*/
+
+.modal-responsibilites-content {
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.modal-responsibilites-content li {
+  font-size: 1.5rem;
+  color: #f8f6f5;
+  padding: 5px 0;
+}
+
+/* break points / misc */
+
+.modal-title,
+.modal-techstack,
+.modal-app-desc {
+  color: #f8f6f5;
+  padding: 1%;
+}
+
+@media (min-width: 751px) {
+  .modal {
+    width: 650px;
+    margin-left: -325px;
+  }
+
+  .modal-mobile {
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .modal-responsibilites-content {
+    display: none;
+  }
+}
+
+/* == Modal End == */
