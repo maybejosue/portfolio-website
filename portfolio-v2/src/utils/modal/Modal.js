@@ -23,13 +23,17 @@ export const Modal = ({ project, toggle }) => {
           e.stopPropagation();
         }}
       >
-        <div className="modal-exit-btn" onClick={toggle}>
+        <div className="modal-exit-btn" onClick={toggle} title="Exit modal">
           <Exit />
         </div>
         <div className="modal-desktop-content">
           <div className="modal-mobile">
             <div className="modal-img-container">
-              <img src={img} className="modal-img" alt="project" />
+              <img
+                src={img}
+                className="modal-img"
+                alt={`Image of a project called ${name}`}
+              />
             </div>
             <div className="modal-mobile-content">
               <h4 className="modal-title">{name}</h4>
@@ -40,7 +44,10 @@ export const Modal = ({ project, toggle }) => {
                 <br />
                 {appDesc}
               </p>
-              <p className="modal-techstack">{techStack}</p>
+              <p className="modal-techstack">
+                <h6>Tech Stack:</h6>
+                {techStack}
+              </p>
 
               <br />
               <div className="modal-btn-container">
@@ -49,7 +56,7 @@ export const Modal = ({ project, toggle }) => {
                     href={githubRepoToLive}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title="Live View"
+                    title="Source Code"
                   >
                     <SourceCode />
                   </a>

@@ -10,8 +10,21 @@ export const ProjectCard = ({ project }) => {
   const { name, img, id } = project;
   const [modal, setModal] = useState(false);
 
+  const stopOverflow = () => {
+    var body = document.getElementsByTagName("body")[0];
+    if (
+      body.getAttribute("style") == null ||
+      body.getAttribute("style") == ""
+    ) {
+      body.style.overflowY = "hidden";
+    } else {
+      body.style.overflowY = "";
+    }
+  };
+
   const toggle = () => {
     setModal(!modal);
+    stopOverflow();
   };
 
   return (
