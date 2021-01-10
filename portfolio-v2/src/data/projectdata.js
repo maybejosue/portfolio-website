@@ -1,8 +1,11 @@
+//Project images
+import communityCalendar from "../img/community-calendar.png";
+import animeArchive from "../img/anime-archive.png";
+
 export const projectData = [
   {
     id: 1,
-    img:
-      "https://i.postimg.cc/nzfTpHff/Screen-Shot-2020-05-14-at-4-38-33-PM.png",
+    img: communityCalendar,
     name: "Our Community Calendar",
     appDesc:
       "Residents experience increasing isolation and are frequently unaware of neighborhood and community gatherings in their local area. Municipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distribution lists.",
@@ -18,5 +21,21 @@ export const projectData = [
     liveSite: "https://www.northendcalendar.com/",
     githubRepoToLive:
       "https://github.com/Lambda-School-Labs?q=community-calendar&type=&language=",
+  },
+  {
+    id: 2,
+    img: animeArchive,
+    name: "Anime Archive",
+    appDesc:
+      "A mobile, web-based, online database of information related to anime. Users can discover new anime or level up their love and fandom for their already favorite anime.",
+    techStack: "React | JavaScript | HTML | CSS | GraphQL | Netlify",
+    responsibility: [
+      "Collaborated closely with another Web Developer to design, develop, and integrate a mobile user-friendly interface",
+      "Prioritized reusability and readability of components throughout application to minimize code maintenance",
+      "Implemented custom query string building function to return query string relative to user search and filter settings",
+      "Distributed external API data throughout react application",
+    ],
+    liveSite: "https://animearchive.netlify.app/",
+    githubRepoToLive: "https://github.com/Anime-Archive/anime-archive-fe",
   },
 ];
