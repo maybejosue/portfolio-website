@@ -31,6 +31,18 @@
   padding: 5% 4% 5% 4%;
 }
 
+.card-img-overflow {
+  overflow: scroll;
+  height: 200px;
+  border-radius: 10px;
+}
+
+@media (min-width: 950px) {
+  .card-img-overflow {
+    height: 300px;
+  }
+}
+
 .card-img {
   border-radius: 10px;
   width: 100%;

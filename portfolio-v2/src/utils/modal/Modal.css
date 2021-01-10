@@ -60,6 +60,12 @@
 /* .modal-mobile */
 
 /* .modal-img-container */
+.modal-img-container {
+  overflow: scroll;
+  max-height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
 /* .modal-img */
 
