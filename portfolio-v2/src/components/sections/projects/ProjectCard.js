@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./ProjectCard.css";
-// import { useHistory } from "react-router-dom";
 import { Modal } from "../../../utils/modal/Modal.js";
 
 // SVGs
@@ -31,7 +30,9 @@ export const ProjectCard = ({ project }) => {
     <>
       <div className="card-container" key={id}>
         <div className="card-img-container">
-          <img src={img} className="card-img" alt="project" />
+          <div className="card-img-overflow">
+            <img src={img} className="card-img" alt="project" />
+          </div>
         </div>
 
         <div className="card-text-content-container">
