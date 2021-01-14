@@ -41,7 +41,7 @@ function App() {
                 <MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />
               )}
 
-              <div onClick={() => setCloseNav(true)}>
+              <div className='port-sections' onClick={() => setCloseNav(true)}>
                 <Home />
                 <Aboutme />
                 <ProjectList />
