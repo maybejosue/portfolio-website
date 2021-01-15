@@ -20,7 +20,7 @@ export const projectData = [
     ],
     liveSite: "https://www.northendcalendar.com/",
     githubRepoToLive:
-      "https://github.com/Lambda-School-Labs?q=community-calendar&type=&language=",
+      "https://github.com/Lambda-School-Labs/community-calendar-fe",
   },
   {
     id: 2,
