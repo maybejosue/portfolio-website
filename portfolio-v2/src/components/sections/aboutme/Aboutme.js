@@ -3,7 +3,7 @@ import React from "react";
 import "./Aboutme.css";
 
 //images
-import home from "../../../img/home.jpg";
+import home from "../../../img/home.png";
 
 // icon
 import { Carrot } from "../../../utils/index.js";
