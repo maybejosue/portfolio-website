@@ -22,7 +22,7 @@ export const socialdata = [
   },
   {
     id: 3,
-    link: "https://mail.google.com/mail/#inbox?compose=new",
+    link: "mailto:maybejosue@gmail.com",
     color: "#b23121",
     heading: "Email",
     subHeading: "maybejosue@gmail.com",

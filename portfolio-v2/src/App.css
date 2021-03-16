@@ -25,3 +25,10 @@ a {
   top: 0;
   transition: top 250ms linear;
 }
+
+/* port sections */
+.port-sections{
+  min-width: 350px;
+  max-width: 1350px;
+  margin:0 auto;
+}
