@@ -1,3 +1,4 @@
+// sets state to window width
 export const TrackWindowWidth = (widthState) => {
   var newWidth =
     window.innerWidth ||

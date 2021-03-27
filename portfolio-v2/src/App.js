@@ -18,10 +18,12 @@ function App() {
   const [closeNav, setCloseNav] = useState(true);
   const [mobileNav, setMobileNav] = useState(window.innerWidth);
 
+  // sets mobileNav to current window size
   window.addEventListener("resize", () => {
     TrackWindowWidth(setMobileNav);
   });
 
+  // call headroom function on scroll
   window.onscroll = Headroom;
 
   return (
