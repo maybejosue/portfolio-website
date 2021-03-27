@@ -1,6 +1,5 @@
 //Project images
-import communityCalendar from "../img/community-calendar.png";
-import animeArchive from "../img/anime-archive.png";
+import { communityCalendar, animeArchive } from "../media/img/index.js";
 
 export const projectData = [
   {
@@ -9,7 +8,8 @@ export const projectData = [
     name: "Our Community Calendar",
     appDesc:
       "Residents experience increasing isolation and are frequently unaware of neighborhood and community gatherings in their local area. Municipalities, community organizations, and businesses struggle to reach local residents through noisy social networks and siloed email distribution lists.",
-    techStack: "React | JavaScript | HTML | AWS | Apollo Client | Apollo Server | GraphQL | Prisma",
+    techStack:
+      "React | JavaScript | HTML | AWS | Apollo Client | Apollo Server | GraphQL | Prisma",
     responsibility: [
       "Delivered functoning Web and iOS products built to the stakeholders’ specificatons",
       "Implemented Google Analytics to track user flow and behavior",

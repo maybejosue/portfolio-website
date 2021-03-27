@@ -1,6 +1,6 @@
 import React from "react";
 import "./Modal.css";
-import { Exit, LiveView, SourceCode } from "../index.js";
+import { Exit, LiveView, SourceCode } from "../../media/icons/index.js";
 
 export const Modal = ({ project, toggle }) => {
   const {

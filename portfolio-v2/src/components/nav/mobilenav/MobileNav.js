@@ -4,39 +4,37 @@ import "./MobileNav.css";
 import { useHistory } from "react-router-dom";
 
 // Image
-import MyPic from "../../../img/professional-pic.png";
+import { professionalPic } from "../../../media/img/index.js";
 
 // data structure for nav tabs
-import {navdata} from '../../../data/navdata.js'
+import { navdata } from "../../../data/navdata.js";
 
 export default function MobileNav(props) {
-const history = useHistory();
-const [isOpen, setIsOpen] = useState(false);
+  const history = useHistory();
+  const [isOpen, setIsOpen] = useState(false);
 
-
-function open() {
-if (window.matchMedia("(min-width: 600px)").matches) {
-    document.getElementById("sidebar-menu").style.width = "50%";
-    setIsOpen(true);
-  } else {
-    document.getElementById("sidebar-menu").style.width = "60%";
-    setIsOpen(true);
+  function open() {
+    if (window.matchMedia("(min-width: 600px)").matches) {
+      document.getElementById("sidebar-menu").style.width = "50%";
+      setIsOpen(true);
+    } else {
+      document.getElementById("sidebar-menu").style.width = "60%";
+      setIsOpen(true);
+    }
   }
-}
 
-function close() {
-  document.getElementById("sidebar-menu").style.width = "0";
-  setIsOpen(false);
-}
+  function close() {
+    document.getElementById("sidebar-menu").style.width = "0";
+    setIsOpen(false);
+  }
 
-
-  const importance = navdata[navdata.length -1]
+  const importance = navdata[navdata.length - 1];
 
   return (
     <section id="home" id="mobileNav">
       <nav>
         <div className="mobile-nav-container">
-          <div className='headroom'>
+          <div className="headroom">
             <div className="closed-nav-container">
               <div className="svg-container">
                 <svg
@@ -57,14 +55,16 @@ function close() {
               </div>
 
               <div className="img-container">
-                <Link smooth duration={850} to='home'>
-                  <img className="img" src={MyPic} alt="Josue Rodriguez" />
+                <Link smooth duration={850} to="home">
+                  <img
+                    className="img"
+                    src={professionalPic}
+                    alt="Josue Rodriguez"
+                  />
                 </Link>
               </div>
             </div>
-            </div>
-            
-          
+          </div>
 
           <div
             id="sidebar-menu"
@@ -86,32 +86,38 @@ function close() {
                 />
               </svg>
             </div>
-            
+
             <div className="img-container-open">
-              <Link smooth duration={850} to='home'>
-                <img className="img-open" src={MyPic} alt="Josue Rodriguez" />
+              <Link smooth duration={850} to="home">
+                <img
+                  className="img-open"
+                  src={professionalPic}
+                  alt="Josue Rodriguez"
+                />
               </Link>
             </div>
             {/* maps thru navdata data structure in order to display all basic tabs to mobile nav bar */}
             <div>
-              {navdata.map((data)=>(( <Link
-                smooth
-                duration={850}
-                to={data.goingTo}
-                className="anchors"
-                onClick={close}
-                key={data.id}
-              >
-                {data.sectionHeading}
-              </Link>)
-                
+              {navdata.map((data) => (
+                <Link
+                  smooth
+                  duration={850}
+                  to={data.goingTo}
+                  className="anchors"
+                  onClick={close}
+                  key={data.id}
+                >
+                  {data.sectionHeading}
+                </Link>
               ))}
             </div>
 
-            <div className="mobile-contact-container" onClick={() => history.push('/resume')}>
+            <div
+              className="mobile-contact-container"
+              onClick={() => history.push("/resume")}
+            >
               Resume
             </div>
-
           </div>
         </div>
       </nav>
