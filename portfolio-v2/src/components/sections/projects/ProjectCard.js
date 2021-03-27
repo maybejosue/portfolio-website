@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./ProjectCard.css";
-import { Modal } from "../../../utils/modal/Modal.js";
+import { Modal } from "../../modal/Modal.js";
 
 // SVGs
-import { Expand } from "../../../utils/index.js";
+import { Expand } from "../../../media/icons/index.js";
 
 export const ProjectCard = ({ project }) => {
   const { name, img, id } = project;

@@ -11,19 +11,15 @@ import ProjectList from "./components/sections/projects/ProjectList.js";
 import Social from "./components/sections/social/Social.js";
 import Resume from "./components/sections/resume/Resume.js";
 
-import { Headroom } from "./utils/index";
+// util helper functions
+import { Headroom, TrackWindowWidth } from "./utils/index.js";
 
 function App() {
   const [closeNav, setCloseNav] = useState(true);
   const [mobileNav, setMobileNav] = useState(window.innerWidth);
 
   window.addEventListener("resize", () => {
-    var newWidth =
-      window.innerWidth ||
-      document.documentElement.clientWidth ||
-      document.body.clientWidth;
-
-    setMobileNav(newWidth);
+    TrackWindowWidth(setMobileNav);
   });
 
   window.onscroll = Headroom;
@@ -34,14 +30,14 @@ function App() {
         <Switch>
           <Route exact path="/">
             <div>
-              {/* Keeps tabs in window width in order to switch between mobile and desktop navbar */}
+              {/*  Switch between mobile and desktop navbar */}
               {mobileNav > 850 ? (
                 <Nav />
               ) : (
                 <MobileNav closeNav={closeNav} setCloseNav={setCloseNav} />
               )}
 
-              <div className='port-sections' onClick={() => setCloseNav(true)}>
+              <div className="port-sections" onClick={() => setCloseNav(true)}>
                 <Home />
                 <Aboutme />
                 <ProjectList />

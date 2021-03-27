@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 //animation
 import SoftwareEngineer from "../../animations/SoftwareEngineer.js";
 
-import gif from "../../../utils/gif.gif";
+import gif from "../../../media/gif.gif";
 
 export default function Home(props) {
   return (

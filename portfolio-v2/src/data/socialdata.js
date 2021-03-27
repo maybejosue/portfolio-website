@@ -1,7 +1,4 @@
-import linkedin from "../img/linkedin-logo-x2.png";
-import github from "../img/github-logo-x2.png";
-import email from "../img/email-communication-x2.png";
-import leetcode from "../img/leetcode.png";
+import { linkedin, github, email, leetcode } from "../media/img/index.js";
 
 export const socialdata = [
   {
