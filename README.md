@@ -6,5 +6,5 @@ Compilation of materials that exemplifies skills, qualifications, education, tra
 [React](https://reactjs.org/) | CSS
 ￼
 # Screenshots
-![](https://github.com/maybejosue/portfolio-website/blob/master/portfolio-v2/src/img/desktop.png)
+![](https://github.com/maybejosue/portfolio-website/blob/master/portfolio-v2/src/media/img/desktop.png)
 
