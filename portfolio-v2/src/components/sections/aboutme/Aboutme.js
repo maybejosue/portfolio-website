@@ -42,8 +42,11 @@ export default function Aboutme() {
                 the sneaker-twitter community (sneaker drops).
                 <br />
                 <br />
-                My goal right now is to find an awesome engineering-team that I
-                can call my second family!
+                I'm currently working as a part-time Project Reviewer for
+                Lambda, where I support the learning and professional growth of
+                Lambda School students by providing actionable feedback on
+                sprint challenge submissions. My goal right now is to join an
+                awesome engineering-team as a full-time Software Engineer!
                 <br />
                 <br />
               </p>
