@@ -1,9 +1,14 @@
 //Project images
-import { communityCalendar, animeArchive } from "../media/img/index.js";
+import {
+  communityCalendar,
+  animeArchive,
+  silentAuction,
+  weightLiftingJournal,
+} from "../media/img/index.js";
 
 export const projectData = [
   {
-    id: 1,
+    id: 4,
     img: communityCalendar,
     name: "Our Community Calendar",
     appDesc:
@@ -23,7 +28,7 @@ export const projectData = [
       "https://github.com/Lambda-School-Labs/community-calendar-fe",
   },
   {
-    id: 2,
+    id: 3,
     img: animeArchive,
     name: "Anime Archive",
     appDesc:
@@ -37,5 +42,36 @@ export const projectData = [
     ],
     liveSite: "https://animearchive.netlify.app/",
     githubRepoToLive: "https://github.com/Anime-Archive/anime-archive-fe",
+  },
+  {
+    id: 2,
+    img: silentAuction,
+    name: "Silent Auction",
+    appDesc:
+      "Web app allows users to own items at a desired price while supporting charity organizations; grants unprecedented access to remote auctions",
+    techStack: "React | Redux | JavaScript | HTML | CSS | Netlify",
+    responsibility: [
+      "Built Redux store, action creators, reducers, and maintained all state data across the web application",
+      "Implemented CRUD (Create, Read, Update, Delete) operations in the seller dashboard",
+      "Led/Collaborated with 3 Engineers to develop marketing page and seller dashboard under a week",
+    ],
+    liveSite: "https://silentauction-app.netlify.app/",
+    githubRepoToLive: "https://github.com/Web26-Silent-Auction-1/FE",
+  },
+  {
+    id: 1,
+    img: weightLiftingJournal,
+    name: "Weightlifting Journal",
+    appDesc:
+      "Convenient app that tracks your progress in order to help individuals achieve and preserve a way of life and a mindset unique to the roots of muscle build and weight loss",
+    techStack: "HTML | CSS | LESS | Netlify",
+    responsibility: [
+      "Lead designer on the marketing web page aimed to brief users of our features",
+      "Deployed landing page using Netlify to serve independently from the Front End",
+      "Responsive for Mobile and Desktop",
+    ],
+    liveSite: "https://weight-lifting-journal-12.netlify.app/index.html",
+    githubRepoToLive:
+      "https://github.com/BW-FT-Weight-Lifting-Journal-12/ui-marketing-page",
   },
 ];
