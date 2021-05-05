@@ -1,5 +1,10 @@
 //Project images
-import { communityCalendar, animeArchive } from "../media/img/index.js";
+import {
+  communityCalendar,
+  animeArchive,
+  silentAuction,
+  weightLiftingJournal,
+} from "../media/img/index.js";
 
 export const projectData = [
   {
@@ -24,6 +29,38 @@ export const projectData = [
   },
   {
     id: 2,
+    img: animeArchive,
+    name: "Anime Archive",
+    appDesc:
+      "A mobile, web-based, online database of information related to anime. Users can discover new anime or level up their love and fandom for their already favorite anime.",
+    techStack: "React | JavaScript | HTML | CSS | GraphQL | Netlify",
+    responsibility: [
+      "Collaborated closely with another Web Developer to design, develop, and integrate a mobile user-friendly interface",
+      "Prioritized reusability and readability of components throughout application to minimize code maintenance",
+      "Implemented custom query string building function to return query string relative to user search and filter settings",
+      "Distributed external API data throughout react application",
+    ],
+    liveSite: "https://animearchive.netlify.app/",
+    githubRepoToLive: "https://github.com/Anime-Archive/anime-archive-fe",
+  },
+  {
+    id: 3,
+    img: animeArchive,
+    name: "Anime Archive",
+    appDesc:
+      "A mobile, web-based, online database of information related to anime. Users can discover new anime or level up their love and fandom for their already favorite anime.",
+    techStack: "React | JavaScript | HTML | CSS | GraphQL | Netlify",
+    responsibility: [
+      "Collaborated closely with another Web Developer to design, develop, and integrate a mobile user-friendly interface",
+      "Prioritized reusability and readability of components throughout application to minimize code maintenance",
+      "Implemented custom query string building function to return query string relative to user search and filter settings",
+      "Distributed external API data throughout react application",
+    ],
+    liveSite: "https://animearchive.netlify.app/",
+    githubRepoToLive: "https://github.com/Anime-Archive/anime-archive-fe",
+  },
+  {
+    id: 4,
     img: animeArchive,
     name: "Anime Archive",
     appDesc:
