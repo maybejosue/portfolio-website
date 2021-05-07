@@ -16,12 +16,11 @@ export const projectData = [
     techStack:
       "React | JavaScript | HTML | AWS | Apollo Client | Apollo Server | GraphQL | Prisma",
     responsibility: [
-      "Delivered functoning Web and iOS products built to the stakeholders’ specificatons",
-      "Implemented Google Analytics to track user flow and behavior",
-      "Conducted productive user research with meaningful results",
-      "Developed front-end snapshot and unit tests",
-      "Merged home and search page to improve overall functionality while maintaining the apps integrity",
-      "Collaborated on a remote team of 5 Web Developers and 3 iOS engineers to create a cohesive experience between web and mobile",
+      "Developed Front-end unit tests to ensure code quality; increased test-coverage score by over 50%",
+      "Provided creative solution to stakeholder’s desire to create a contextual calendar view by merging the home and search page, which ultimately saved time by utilizing our existing features",
+      "Resolved event-card UI bug by enforcing image upload on event creation form",
+      "Implemented Google Analytics API to track and understand user flow and behavior",
+      "Collaborated on a remote cross-functional team to create a cohesive experience between web and iOS, implementing the highest priority features from recently conducted user studies",
     ],
     liveSite: "https://www.northendcalendar.com/",
     githubRepoToLive:
@@ -35,10 +34,10 @@ export const projectData = [
       "A mobile, web-based, online database of information related to anime. Users can discover new anime or level up their love and fandom for their already favorite anime.",
     techStack: "React | JavaScript | HTML | CSS | GraphQL | Netlify",
     responsibility: [
-      "Collaborated closely with another Web Developer to design, develop, and integrate a mobile user-friendly interface",
+      "Assisted with design, development, and integration of a mobile, user-friendly interface",
       "Prioritized reusability and readability of components throughout application to minimize code maintenance",
-      "Implemented custom query string building function to return query string relative to user search and filter settings",
-      "Distributed external API data throughout react application",
+      "Integrated AniList GraphQL API as our primary source of content for anime entries",
+      "Established search and filter behavior to work interchangeably",
     ],
     liveSite: "https://animearchive.netlify.app/",
     githubRepoToLive: "https://github.com/Anime-Archive/anime-archive-fe",
@@ -51,9 +50,9 @@ export const projectData = [
       "Web app allows users to own items at a desired price while supporting charity organizations; grants unprecedented access to remote auctions",
     techStack: "React | Redux | JavaScript | HTML | CSS | Netlify",
     responsibility: [
-      "Built Redux store, action creators, reducers, and maintained all state data across the web application",
-      "Implemented CRUD (Create, Read, Update, Delete) operations in the seller dashboard",
-      "Led/Collaborated with 3 Engineers to develop marketing page and seller dashboard under a week",
+      "Administered redux store, action creators, reducers, and maintained all state data across the web app",
+      "Developed CRUD (Create, Read, Update, Delete) operations in the seller dashboard",
+      "Led a group of 3 engineers to develop a functional marketing page and seller dashboard in under a week",
     ],
     liveSite: "https://silentauction-app.netlify.app/",
     githubRepoToLive: "https://github.com/Web26-Silent-Auction-1/FE",
@@ -67,8 +66,8 @@ export const projectData = [
     techStack: "HTML | CSS | LESS | Netlify",
     responsibility: [
       "Lead designer on the marketing web page aimed to brief users of our features",
-      "Deployed landing page using Netlify to serve independently from the Front End",
-      "Responsive for Mobile and Desktop",
+      "Deployed landing page using Netlify to serve independently from the front-end",
+      "Tailored responsiveness to mobile and web",
     ],
     liveSite: "https://weight-lifting-journal-12.netlify.app/index.html",
     githubRepoToLive:
