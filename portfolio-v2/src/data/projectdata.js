@@ -16,11 +16,10 @@ export const projectData = [
     techStack:
       "React | JavaScript | HTML | AWS | Apollo Client | Apollo Server | GraphQL | Prisma",
     responsibility: [
-      "Developed Front-end unit tests to ensure code quality; increased test-coverage score by over 50%",
+      "Completed Front-end unit tests to ensure code quality; increased test-coverage score by over 50%",
       "Provided creative solution to stakeholder’s desire to create a contextual calendar view by merging the home and search page, which ultimately saved time by utilizing our existing features",
       "Resolved event-card UI bug by enforcing image upload on event creation form",
       "Implemented Google Analytics API to track and understand user flow and behavior",
-      "Collaborated on a remote cross-functional team to create a cohesive experience between web and iOS, implementing the highest priority features from recently conducted user studies",
     ],
     liveSite: "https://www.northendcalendar.com/",
     githubRepoToLive:

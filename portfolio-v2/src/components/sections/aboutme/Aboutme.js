@@ -29,7 +29,11 @@ export default function Aboutme() {
                 <br />
                 My professional career started when I dropped out of college to
                 attend{" "}
-                <a href="https://lambdaschool.com/about" target="_blank">
+                <a
+                  href="https://www.credly.com/badges/13c57035-cf72-4e2d-9e05-7dee0de2e8c3/public_url"
+                  target="_blank"
+                  alt="Certificate of Completion"
+                >
                   Lambda School
                 </a>
                 , a 9+ month computer science and software engineering program
@@ -42,11 +46,10 @@ export default function Aboutme() {
                 the sneaker-twitter community (sneaker drops).
                 <br />
                 <br />
-                I'm currently working as a part-time Project Reviewer for
-                Lambda, where I support the learning and professional growth of
-                Lambda School students by providing actionable feedback on
-                sprint challenge submissions. My goal right now is to join an
-                awesome engineering-team as a full-time Software Engineer!
+                I recently left my Project Reviewing position at Lambda to focus
+                on finding a team whose products and projects I'm passionate
+                about. My goal right now is to join an awesome engineering-team
+                as a full-time Software Engineer!
                 <br />
                 <br />
               </p>
