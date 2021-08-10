@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 
-// components
+// Components
 import Nav from "./components/nav/desktopnav/Nav.js";
 import MobileNav from "./components/nav/mobilenav/MobileNav.js";
 import Home from "./components/sections/home/Home.js";

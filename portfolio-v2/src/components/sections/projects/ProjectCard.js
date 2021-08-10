@@ -27,7 +27,7 @@ export const ProjectCard = ({ project }) => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <div className="card-container" key={id}>
         <div className="card-img-container">
           <div className="card-img-overflow">
@@ -52,6 +52,6 @@ export const ProjectCard = ({ project }) => {
         </div>
       </div>
       {modal ? <Modal project={project} toggle={toggle} /> : null}
-    </>
+    </React.Fragment>
   );
 };
